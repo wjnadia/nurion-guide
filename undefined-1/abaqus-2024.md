@@ -69,6 +69,7 @@ TOTAL_CPUS=$(grep "^#PBS -l select=" "$SCRIPT_PATH" | sed -n 's/.*ncpus=\([0-9]\
 if [ ! -f "$HOME/.lmod" ]; then
     touch "$HOME/.lmod"
 fi
+source /apps/Modules/lmod/8.7.37/init/bash
 #######################
 
 module load abaqus/2024
