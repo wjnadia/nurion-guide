@@ -14,9 +14,9 @@
 
 * Commercial 큐 (상용SW 수행을 위한 큐)와 디버깅을 위한 debug큐는 공유 노드 정책이 적용되어 가용 자원(CPU core) 범위 내에서 노드 당 여러개의 작업이 배치되며, 나머지 큐에서는 배타적 노드 정책으로 노드 당 하나의 작업만이 배치된다.
 * 작업 큐
-  * 일반사용자가 사용할 수 있는 큐와 사용자별 제출 가능 작업 개수는 다음 표와 같다. (2021년 4월 기준)
+  * 일반사용자가 사용할 수 있는 큐와 사용자 별 제출 가능 작업 개수는 다음 표와 같다. (2025년 10월 기준)
 
-![](../.gitbook/assets/nurion-04-01-table-01.png)
+<figure><img src="../.gitbook/assets/nurion_motd.png" alt=""><figcaption></figcaption></figure>
 
 **※ 노드 구성은 시스템 부하에 따라 시스템 운영 중에 조정될 수 있음.** (showq 명령어와 motd를 통해 노드 구성과 최대 작업가능개수를 수시로 확인할 수 있음)
 
@@ -24,7 +24,7 @@
 
 ### 1. 큐별 설명
 
-![](../.gitbook/assets/nurion-04-01-table-02.png)
+<table><thead><tr><th width="105" align="center">구분</th><th width="125" align="center">큐명</th><th align="center">특징</th></tr></thead><tbody><tr><td align="center">KNL</td><td align="center">exclusive</td><td align="center">R&#x26;D 혁신지원 프로그램 중 거대 도전연구 및 집단연구 분야 지원을 위한 전용자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">normal</td><td align="center">무상 서비스 사용자(창의연구 분야, 국가전략 분야, 혁신지원 분야)와 유상 서비스 사용자를 위한 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">long</td><td align="center">장기간 작업 수행을 할 수 있는 큐로 최대 120시간(5일) 동안 사용할 수 있는 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">flat</td><td align="center">메모리 모드가 flat으로, MCDRAM(16GB)과 DDR4를 지정하여 사용할 수 있으며 최대 102GB까지 메모리 사용이 가능한 일반자원 큐<br></td></tr><tr><td align="center">KNL</td><td align="center">debug</td><td align="center">KNL 노드의 디버깅을 위한 큐로 공유노드 정책이 적용되어 있는 일반자원 큐, 인터렉티브 작업을 통해 디버깅 가능</td></tr><tr><td align="center">SKL</td><td align="center">commercial</td><td align="center">상용 어플리케이션 수행을 위한 일반자원 큐로 공유노드 정책 적용(*Gaussian을 제외한 상용 SW는 commercial 큐 사용을 원칙으로 함)</td></tr><tr><td align="center">SKL</td><td align="center">norm_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr><tr><td align="center">SKL</td><td align="center">new_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr></tbody></table>
 
 ### 2. 작업 제출 개수 제한
 
