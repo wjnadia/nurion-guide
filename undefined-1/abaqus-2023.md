@@ -16,7 +16,7 @@ description: Abaqus 지침서
 
 * 사용 가능 사용자 그룹 : 대학교/산업체(중소기업)/출연연구소 사용자
 * 신규사용자의 경우 KSC 홈페이지 사용 신청서 작성 시 반드시 '사용할 애플리케이션'에 Abaqus를 명시하여야 합니다.
-* 기존사용자의 경우 account@ksc.re.kr로 계정, 소속, 아이디를 명기하고 신청을 해주십시오.
+* 기존사용자의 경우 account@ksc.re.kr로 계정, 소속, 아이디를 명기하고 신청을 해주시기  바랍니다.
 * 산업체(중소기업) 소속의 경우 account@ksc.re.kr로 관련 서류(중소기업 확인서, 벤처기업 확인서 등)를 제출해야 합니다.
 * 사용 중 소속이 변경되어 해당 소속에 해당되지 않는 경우 반드시 account@ksc.re.kr로 알려주시기 바랍니다.
 
@@ -88,7 +88,11 @@ description: Abaqus 지침서
 
 * 다음과 같이 batch mode로 job을 실행하기 위한 명령어 입력
 
+
+
 <table data-header-hidden><thead><tr><th width="188"></th><th></th></tr></thead><tbody><tr><td><strong>형식</strong></td><td>[<strong>command</strong>] [<strong>option</strong>]</td></tr><tr><td>Commands</td><td><p>abq6146 (6-14.6버전)</p><p>abq2016hf19 (2016 버전)</p><p>abq2017hf13 (2017 버전)</p><p>abq2018hf5 (2018 버전)</p><p>abq2019hf5 (2019 버전)<br>abq2020hf4 (2020 버전)<br>abq2021 (2021 버전)<br>abq2022 (2022 버전)<br>abq2023hf7 (2023버전)</p></td></tr><tr><td>예제(6.14-6 버전)</td><td><p>abq6146 job=<mark style="color:blue;"><strong>job_name</strong></mark> [cpus=<mark style="color:blue;"><strong>ncpus</strong></mark>] [input=<mark style="color:blue;"><strong>inp_file</strong></mark>] [interactive]</p><p>abq6146 job=<mark style="color:blue;"><strong>job_name</strong></mark> oldjob=<mark style="color:blue;"><strong>old_job_name</strong></mark></p><p>abq6146 help</p><p>abq6146 information=environment</p><p>abq6146 viewer [res=<mark style="color:blue;"><strong>res_name</strong></mark>]</p></td></tr></tbody></table>
+
+
 
 * 파란 글씨 부분을 작업명, 사용코어 수, 입력 파일 명으로 수정 후 사용하시기 바랍니다.
 * Interactive 방식의 실행은 CPU time이 20분으로 제한되어 있습니다.

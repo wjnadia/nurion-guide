@@ -3,7 +3,7 @@
 ## 가. 프로그래밍 도구 설치 현황
 
 * 컴파일러 및 라이브러리 모듈
-  * &#x20;<mark style="color:red;">**Abaqus는 2023년 8월 9일로 서비스 재개되었음**</mark>
+  * &#x20;<mark style="color:red;">**Abaqus는 2023년 8월 9일로 서비스 재개되었습니다.**</mark>
 
 |           **구분**           |                                                                                                                                             [**항목 (이름/버전)**](#user-content-fn-1)[^1]                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | :------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -19,14 +19,16 @@
 |           Cray 모듈          |                           <p>∙ cdt/17.10</p><p>∙ cray-ccdb/3.0.3</p><p>∙ cray-cti/1.0.6</p><p>∙ cray-fftw/3.3.6.2</p><p>∙ cray-fftw_impi/3.3.6.2</p><p>∙ cray-impi/1.1.4</p><p>∙ cray-lgdb/3.0.7</p><p>∙ cray-libsci/17.09.1</p><p>∙ craype/2.5.13</p><p>∙ craypkg-gen/1.3.5</p><p>∙ chklimit/1.0</p>                           |                                                                                       <p>∙ vapich2_cce/2.2rc1.0.3_noslurm</p><p>∙ vapich2_gnu/2.2rc1.0.3_noslurm</p><p>∙ papi/5.5.1.3</p><p>∙ perftools/6.5.2</p><p>∙ perftools-bas/6.5.2</p><p>∙ perftools-lite/6.5.2</p><p>∙ PrgEnv-cray/1.0.2</p><p>∙ libfabric/1.7.0</p><p>∙ pbs/trace</p><p>∙ pbs/tools</p>                                                                                      |
 |             etc            |                                                                                    <p>∙ cmake/3.12.3</p><p>∙ cmake/3.17.4</p><p>∙ cmake/3.26.2</p><p>∙ common/memkind-1.9.0</p><p>∙ git/1.8.3.4</p><p>∙ git/2.35.1</p><p>∙ IGPROF/5.9.16</p>                                                                                    |                                                                                                                                                         <p>∙ ImageMagick/7.0.8-20</p><p>∙ perl/5.28.1</p><p>∙ qt/4.8.7</p><p>∙ qt/5.9.6</p><p>∙ subversion/1.7.19</p><p>∙ subversion/1.9.3</p>                                                                                                                                                        |
 
-* &#x20;apps/Modules/modulefiles/test 은 test 모듈임
-* &#x20;ANSYS 사용이 가능한 사용자 그룹은 대학교, 산업체(중소기업), 출연연구소에 한함.&#x20;
+
+
+* &#x20;apps/Modules/modulefiles/test 은 test 모듈입니다.
+* &#x20;ANSYS 사용이 가능한 사용자 그룹은 대학교, 산업체(중소기업), 출연연구소에 한정합니다.
   * **사용 가능 사용자 그룹이 아니거나 사용 신청을 하지 않은 타 기관 사용자에 의한 ANSYS 사용은 ANSYS 사에 의해 법적 제재를 당할 수 있음에 유의하시기 바랍니다.**&#x20;
-* Abaqus 사용이 가능한 사용자 그룹은 대학교, 산업체(중소기업), 출연연구소에 한함
+* Abaqus 사용이 가능한 사용자 그룹은 대학교, 산업체(중소기업), 출연연구소에 한정 합니다.
   * **사용 가능 사용자 그룹이 아니거나 사용 신청을 하지 않은 타 기관 사용자에 의한 Abaqus 사용은      다쏘시스템코리아에 의해 법적 제재를 당할 수 있음에 유의하시기 바랍니다.**&#x20;
-* Gaussian은 helpdesk 계정담당자(account@ksc.re.kr)를 통해 사용권한 신청 후 사용 가능함&#x20;
+* Gaussian은 helpdesk 계정담당자(account@ksc.re.kr)를 통해 사용권한 신청 후 사용 가능합니다.
 * 공통 라이브러리(예: cairo, expat, jasper, libpng, udunits 등) 설치 현황은 \[별첨 5]을 참조
-* MATLAB은 **사용자(소속기관)가  라이선스를  보유해야 함**.  사용법은   [MATLAB 가이드](https://docs-ksc.gitbook.io/myksc/app/matlab) 참조
+* MATLAB은 **사용자(소속기관)가  라이선스를  보유해야 합니다**.  사용법은   [MATLAB 가이드](https://docs-ksc.gitbook.io/myksc/app/matlab) 참조
 
 
 
@@ -36,9 +38,7 @@
 
 #### 1) 기본 필요 모듈
 
-사용할 계산 노드에 해당되는 모듈 하나를 반드시 추가해야 한다.
-
-
+사용할 계산 노드에 해당되는 모듈 하나를 반드시 추가해야 합니다.
 
 | **사용할 계산 노드** | **KNL**        | **SKL**            |
 | ------------- | -------------- | ------------------ |
@@ -56,7 +56,7 @@ $ module load craype-x86-skylake
 
 *   사용 가능한 모듈 목록 출력
 
-    사용할 수 있는 컴파일러, 라이브러리 등의 모듈 목록을 확인할 수 있다.
+    사용할 수 있는 컴파일러, 라이브러리 등의 모듈 목록을 확인할 수 있습니다.
 
 ```shell-session
 $ module avail
@@ -66,9 +66,9 @@ $ module av
 
 *   사용할 모듈 추가
 
-    사용하고자 하는 컴파일러, 라이브러리 등의 모듈을 추가할 수 있다.&#x20;
+    사용하고자 하는 컴파일러, 라이브러리 등의 모듈을 추가할 수 있습니다.&#x20;
 
-    사용할 모듈들을 한번에 추가할 수 있다.
+    사용할 모듈들을 한번에 추가할 수 있습니다.
 
 ```shell-session
 $ module load [module name] [module name] [module name] …
@@ -81,7 +81,7 @@ $ module load intel/19.1.2 impi/19.1.2 python/3.7
 
 *   사용 모듈 삭제
 
-    필요 없는 모듈을 제거한다. 이 때 한번에 여러 개의 모듈을 삭제할 수 있다.
+    필요 없는 모듈을 제거합니다. 이 때 한번에 여러 개의 모듈을 삭제할 수 있습니다.
 
 ```shell-session
 $ module unload [module name] [module name] [module name] ...
@@ -91,7 +91,7 @@ $ module rm [module name] [module name] [module name] ...
 
 *   사용 모듈 목록 출력
 
-    현재 설정된 모듈 목록을 확인할 수 있다.
+    현재 설정된 모듈 목록을 확인할 수 있습니다.
 
 ```shell-session
 $ module list
@@ -105,9 +105,7 @@ $module li
 $ module purge
 ```
 
-이 경우, 기본 필요 모듈도 일괄 삭제되므로, 모듈 재사용 시 기본 필요 모듈을 다시 추가해야 한다.
-
-
+이 경우, 기본 필요 모듈도 일괄 삭제되므로, 모듈 재사용 시 기본 필요 모듈을 다시 추가해야 합니다.
 
 * 기타 module 활용 예시&#x20;
   * module help 명령 (도움말 보기)
@@ -126,11 +124,11 @@ $ module show [module name]
 
 ### 2. 순차 프로그램 컴파일
 
-순 프로그램은 병렬 프로그램 환경을 고려하지 않은 프로그램을 말한다. 즉, OpenMP, MPI와 같은 병렬 프로그램 인터페이스를 사용하지 않는 프로그램으로써, 하나의 노드에서 하나의 프로세서만 사용해 실행되는 프로그램이다. 순차 프로그램 컴파일 시 사용되는 컴파일러별 옵션은 병렬 프로그램을 컴파일 할 때도 그대로 사용되므로, 순차 프로그램에 관심이 없다 하더라도 참조하는 것이 좋다.
+순 프로그램은 병렬 프로그램 환경을 고려하지 않은 프로그램을 말합니다. 즉, OpenMP, MPI와 같은 병렬 프로그램 인터페이스를 사용하지 않는 프로그램으로써, 하나의 노드에서 하나의 프로세서만 사용해 실행되는 프로그램입니다. 순차 프로그램 컴파일 시 사용되는 컴파일러별 옵션은 병렬 프로그램을 컴파일 할 때도 그대로 사용되므로, 순차 프로그램에 관심이 없다 하더라도 참조하는 것이 좋습니다.
 
 #### **1) Intel 컴파일러**
 
-Intel 컴파일러를 사용하기 위해서 필요한 버전의 Intel 컴파일러 모듈을 추가하여 사용한다. 사용 가능한 모듈은 module avail로 확인할 수 있다.
+Intel 컴파일러를 사용하기 위해서 필요한 버전의 Intel 컴파일러 모듈을 추가하여 사용합니다. 사용 가능한 모듈은 module avail로 확인할 수 있습니다.
 
 ```shell-session
 $ module load intel/18.0.3
@@ -144,8 +142,6 @@ $ module load intel/18.0.3
 | ---------- | -------- | ------------------------------------------------------ |
 | icc / icpc | C / C++  | .C, .cc, .cpp, .cxx,.c++                               |
 | ifort      | F77/F90  | .f, .for, .ftn, .f90, .fpp, .F, .FOR, .FTN, .FPP, .F90 |
-
-
 
 * 컴파일러 옵션
 
@@ -174,7 +170,7 @@ $ module load intel/18.0.3
 
 
 * Intel 컴파일러 사용 예제\
-  다음은 **KNL 계산노드에서** test 예제파일을 intel 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시임
+  다음은 **KNL 계산노드에서** test 예제파일을 intel 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시입니다.
 
 <pre class="language-shell-session"><code class="lang-shell-session"><strong>$ module load craype-mic-knl intel/18.0.3
 </strong>$ icc –o test.exe –O3 –fPIC –xMIC-AVX512 test.c
@@ -195,7 +191,7 @@ $ ./test.exe
 
 #### **2) GNU 컴파일러**
 
-GNU 컴파일러를 사용하기 위해서 필요한 버전의 GNU 컴파일러 모듈을 추가하여 사용한다. 사용 가능한 모듈은 module avail로 확인할 수 있다.
+GNU 컴파일러를 사용하기 위해서 필요한 버전의 GNU 컴파일러 모듈을 추가하여 사용합니다. 사용 가능한 모듈은 module avail로 확인할 수 있습니다.
 
 ```shell-session
 $ module load gcc/7.2.0
@@ -211,6 +207,8 @@ $ module load gcc/7.2.0
 | --------- | -------- | ------------------------------------------------------ |
 | gcc / g++ | C / C++  | .C, .cc, .cpp, .cxx,.c++                               |
 | gfortran  | F77/F90  | .f, .for, .ftn, .f90, .fpp, .F, .FOR, .FTN, .FPP, .F90 |
+
+
 
 * &#x20;GNU 컴파일러 옵션
 
@@ -228,9 +226,11 @@ $ module load gcc/7.2.0
 | -fPIC                                      | PIC(Position Independent Code)가 생성되도록 컴파일                                                         |
 | -help                                      | 옵션 목록 출력                                                                                          |
 
+
+
 * &#x20;GNU 컴파일러 사용 예제
 
-다음은 **KNL 계산노드**에서 test 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시임
+다음은 **KNL 계산노드**에서 test 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl gcc/7.2.0
@@ -252,7 +252,7 @@ $ ./test.exe
 
 #### **3) PGI 컴파일러**
 
-PGI 컴파일러를 사용하기 위해서 필요한 버전의 PGI 컴파일러 모듈을 추가하여 사용한다. 사용 가능한 모듈은 module avail로 확인할 수 있다.
+PGI 컴파일러를 사용하기 위해서 필요한 버전의 PGI 컴파일러 모듈을 추가하여 사용합니다. 사용 가능한 모듈은 module avail로 확인할 수 있습니다.
 
 ```shell-session
 $ module load pgi/18.10
@@ -266,6 +266,8 @@ $ module load pgi/18.10
 | ------------ | -------- | ------------------------------------------------------ |
 | pgcc / pgc++ | C / C++  | .C, .cc, .cpp, .cxx, .c++                              |
 | pgfortran    | F77/F90  | .f, .for, .ftn, .f90, .fpp, .F, .FOR, .FTN, .FPP, .F90 |
+
+
 
 * &#x20;PGI 컴파일러 옵션
 
@@ -285,9 +287,11 @@ $ module load pgi/18.10
 | -fPIC                                                   | PIC(Position Independent Code)가 생성되도록 컴파일                                                                                                                                                            |
 | -help                                                   | 옵션 목록 출력                                                                                                                                                                                             |
 
+
+
 * &#x20;PGI 컴파일러 사용 예제
 
-다음은 **KNL 계산노드에서** test 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** test 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl pgi/18.10
@@ -309,7 +313,7 @@ $ ./test.exe
 
 #### **4) Cray 컴파일러**
 
-Cray 컴파일러를 사용하기 위해서 필요한 버전의 Cray 컴파일러 모듈을 추가하여 사용한다. 사용 가능한 모듈은 module avail로 확인할 수 있다.
+Cray 컴파일러를 사용하기 위해서 필요한 버전의 Cray 컴파일러 모듈을 추가하여 사용합니다. 사용 가능한 모듈은 module avail로 확인할 수 있습니다.
 
 ```shell-session
 $ module load cce/8.6.3
@@ -323,6 +327,8 @@ $ module load cce/8.6.3
 | -------- | -------- | ------------------------------------------------------ |
 | cc / CC  | C / C++  | .C, .cc, .cpp, .cxx,.c++                               |
 | ftn      | F77/F90  | .f, .for, .ftn, .f90, .fpp, .F, .FOR, .FTN, .FPP, .F90 |
+
+
 
 * &#x20;컴파일러 옵션
 
@@ -338,9 +344,11 @@ $ module load cce/8.6.3
 | -h pic               | 2GB이상의 static memory가 필요한 경우 사용(-dynamic 함께 사용) |
 | -dynamic             | 공유 라이브러리를 링크 함                                  |
 
+
+
 * &#x20;Cray 컴파일러 사용 예제
 
-다음은 **KNL 계산노드에서** test 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** test 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl cce/8.6.3 PrgEnv-cray/1.0.2
@@ -368,7 +376,7 @@ $ ./test.exe
 
 #### 1) OpenMP 컴파일
 
-OpenMP는 컴파일러 지시자만으로 멀티 스레드를 활용할 수 있도록 간단하게 개발된 기법으로 OpenMP를 사용한 병렬 프로그램 컴파일 시 사용되는 컴파일러는 순차프로그램과 동일하며, 컴파일러 옵션을 추가하여 병렬 컴파일을 할 수 있는데, 현재 대부분의 컴파일러가 OpenMP 지시자를 지원한다.
+OpenMP는 컴파일러 지시자만으로 멀티 스레드를 활용할 수 있도록 간단하게 개발된 기법으로 OpenMP를 사용한 병렬 프로그램 컴파일 시 사용되는 컴파일러는 순차프로그램과 동일하며, 컴파일러 옵션을 추가하여 병렬 컴파일을 할 수 있는데, 현재 대부분의 컴파일러가 OpenMP 지시자를 지원합니다.
 
 | **컴파일러 옵션**              | **프로그램**          | **옵션**   |
 | ------------------------ | ----------------- | -------- |
@@ -377,9 +385,11 @@ OpenMP는 컴파일러 지시자만으로 멀티 스레드를 활용할 수 있�
 | cc / CC /ftn             | C / C++ / F77/F90 | -homp    |
 | pgcc / pgc++ / pgfortran | C / C++ / F77/F90 | -mp      |
 
+
+
 * &#x20;OpenMP 프로그램 컴파일 예시 (Intel 컴파일러)
 
-다음은 **KNL 계산노드에서 openMP**를 사용하는 test\_omp 예제파일을 intel 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시임
+다음은 **KNL 계산노드에서 openMP**를 사용하는 test\_omp 예제파일을 intel 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl intel/18.0.3
@@ -391,7 +401,7 @@ $ ./test_omp.exe
 
 * &#x20;OpenMP 프로그램 컴파일 예시 (GNU 컴파일러)
 
-다음은 **KNL 계산노드에서 openMP**를 사용하는 test\_omp 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시임
+다음은 **KNL 계산노드에서 openMP**를 사용하는 test\_omp 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl gcc/7.2.0
@@ -403,7 +413,7 @@ $ ./test_omp.exe
 
 * &#x20;OpenMP 프로그램 컴파일 예시 (PGI 컴파일러)
 
-다음은 **KNL 계산노드에서** **openMP**를 사용하는 test\_omp 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **openMP**를 사용하는 test\_omp 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl pgi/18.10
@@ -415,7 +425,7 @@ $ ./test_omp.exe
 
 * &#x20;OpenMP 프로그램 컴파일 예시 (Cray 컴파일러)
 
-다음은 **KNL 계산노드에서** **openMP**를 사용하는 test\_omp 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **openMP**를 사용하는 test\_omp 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test\_omp.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl cce/8.6.3 PrgEnv-cray/1.0.2
@@ -427,7 +437,7 @@ $ ./test_omp.exe
 
 #### 2) MPI 컴파일
 
-사용자는 다음 표의 MPI 명령을 실행할 수 있는데, 이 명령은 일종의 wrapper로써 .bashrc를 통해 지정된 컴파일러가 소스를 컴파일하게 된다.
+사용자는 다음 표의 MPI 명령을 실행할 수 있는데, 이 명령은 일종의 wrapper로써 .bashrc를 통해 지정된 컴파일러가 소스를 컴파일하게 됩니다.
 
 | **구분**        | **Intel** | **GNU**  | **PGI**   | **Cray** |
 | ------------- | --------- | -------- | --------- | -------- |
@@ -438,13 +448,13 @@ $ ./test_omp.exe
 | C++           | icpc      | g++      | pgc++     | CC       |
 | C++ + MPI     | mpiicpc   | mpicxx   | mpicxx    | CC       |
 
-mpicc로 컴파일을 하더라도, 옵션은 wrapping되는 본래의 컴파일러에 해당하는 옵션을 사용해야 한다.
+mpicc로 컴파일을 하더라도, 옵션은 wrapping되는 본래의 컴파일러에 해당하는 옵션을 사용해야 합니다.
 
 
 
 * &#x20;MPI 프로그램 컴파일 예시 (Intel 컴파일러)
 
-다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 Intel 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 Intel 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl intel/18.0.3 impi/18.0.3
@@ -456,7 +466,7 @@ $ mpirun -np 2 ./test_mpi.exe
 
 * &#x20;MPI 프로그램 컴파일 예시 (GNU 컴파일러)
 
-다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 GNU 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl gcc/7.2.0 openmpi/3.1.0
@@ -468,7 +478,7 @@ $ mpirun -np 2 ./test_mpi.exe
 
 * &#x20;MPI 프로그램 컴파일 예시 (PGI 컴파일러)
 
-다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 PGI 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl pgi/18.10 openmpi/3.1.0
@@ -480,7 +490,7 @@ $ mpirun -np 2 ./test_mpi.exe
 
 * &#x20;MPI 프로그램 컴파일 예시 (Cray 컴파일러)
 
-다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시임
+다음은 **KNL 계산노드에서** **MPI**를 사용하는 test\_mpi 예제파일을 Cray 컴파일러로 컴파일하여 실행파일 test\_mpi.exe를 만드는 예시입니다.
 
 ```shell-session
 $ module load craype-mic-knl cce/8.6.3 PrgEnv-cray/1.0.2
@@ -495,11 +505,11 @@ $ mpirun -np 2 ./test_mpi.exe
 ## 다. 디버거 및 프로파일러
 
 \
-5호기 누리온 시스템은 사용자의 프로그램 디버깅을 위하여 DDT를 제공한다. 또한 사용자의 프로그램 프로파일링을 위하여 Intel vtune와 CaryPat 두 가지의 프로파일러를 제공한다.
+5호기 누리온 시스템은 사용자의 프로그램 디버깅을 위하여 DDT를 제공합니다. 또한 사용자의 프로그램 프로파일링을 위하여 Intel vtune와 CaryPat 두 가지의 프로파일러를 제공합니다.
 
 ## 1. 디버거 DDT 사용예제
 
-* 5호기 시스템에서 DDT를 사용하기 위하여 사용할 아키텍처, 컴파일러, MPI를 선택하고 DDT를 사용하기 위한 모듈까지 선택한다.
+* 5호기 시스템에서 DDT를 사용하기 위하여 사용할 아키텍처, 컴파일러, MPI를 선택하고 DDT를 사용하기 위한 모듈까지 선택합니다.
 
 ```shell-session
 $ module load craype-mic-knl or craype-x86-skylake
@@ -507,34 +517,34 @@ $ module load intel/17.0.5 impi/17.0.5
 $ module load forge/18.1.2
 ```
 
-* 본 예제는 위와 같은 황경에서 테스트 되었다.
-* DDT를 사용하기 전 사전 준비로 컴파일 시 -g -O0 옵션을 넣어 실행파일을 선택한다.
+* 본 예제는 위와 같은 환경에서 테스트 되었습니다.
+* DDT를 사용하기 전 사전 준비로 컴파일 시 -g -O0 옵션을 넣어 실행파일을 선택합니다.
 
 ```shell-session
 $ mpiicc -o test.x -g -O0 test.c
 ```
 
-* 사용자의 데스크탑에서 xming 실행 및 ssh X환경 설정 완료한 후 ddt 실행 명령을 실행 한다.
+* 사용자의 데스크탑에서 xming 실행 및 ssh X환경 설정 완료한 후 ddt 실행 명령을 실행합니다.
 
 ```shell-session
 $ ddt &
 ```
 
-* 명령을 실행하여 다음과 같은 팝업 실행 창을 확인한다.
+* 명령을 실행하여 다음과 같은 팝업 실행 창을 확인합니다.
 
 ![](../.gitbook/assets/I97n7qZ81qCXhYr.png)
 
-* 위 명령 중 "RUN" 을 선택하여 다음과 같이 디버깅할 파일 선택한 후 다시 새로운 팝업 창의 "RUN" 선택한다.
+* 위 명령 중 "RUN" 을 선택하여 다음과 같이 디버깅할 파일 선택한 후 다시 새로운 팝업 창의 "RUN" 선택합니다.
 
 ![](<../.gitbook/assets/위 명령중 RUN.png>)
 
-* 다음과 같이 선택 된 실행 파일에 대한 디버깅 모드로 진입하여 디버깅을 진행할 수 있다.
+* 다음과 같이 선택 된 실행 파일에 대한 디버깅 모드로 진입하여 디버깅을 진행할 수 있습니다.
 
 ![](<../.gitbook/assets/다음과 같이 선택 된.png>)
 
 ### 2. 프로파일러 Intel vtune Amplifiler 사용예제
 
-* 본 시스템에서 프로파일러인 vtune을 사용하기 위하여 아키텍처, 컴파일러, MPI를 선택한 후 vtune을 선택하면 프로파일러를 사용 할 수 있다.
+* 본 시스템에서 프로파일러인 vtune을 사용하기 위하여 아키텍처, 컴파일러, MPI를 선택한 후 vtune을 선택하면 프로파일러를 사용 할 수 있습니다.
 
 ```shell-session
 $ module load craype-mic-knl or craype-x86-skylake
@@ -542,10 +552,10 @@ $ module load intel/17.0.5 impi/17.0.5
 $ module load vtune/17.0.5
 ```
 
-본 예제는 위와 같은 환경에서 진행되었다.
+본 예제는 위와 같은 환경에서 진행되었습니다.
 
 * CLI 사용법
-  * Intel vtune Amplifier를 CLI 모드로 실행할 때 명령어는 아래와 같은 형식이다.
+  * Intel vtune Amplifier를 CLI 모드로 실행할 때 명령어는 아래와 같은 형식입니다.
 * $ amplxe-cl 옵션 분석할 프로그램 실행
 
 ```shell-session
@@ -565,7 +575,7 @@ init_arr 0.020s 0.020s 0s 0.020s 0s 0s 0s 0s 0s matrix.mic init_arr matrix.c
 amplx: Executing actions 100% done
 ```
 
-* 위와 같이 이미 컴파일 된 실행파일을 준비하여 명령어 형식에 맞게 실행 시 r000hs 디렉터리가 생성되는 것을 확인할 수 있다. 디렉터리가 생성된 것을 확인 후 리포트 생성을 위한 명령을 실행하면 아래와 같은 결과를 출력된다.
+* 위와 같이 이미 컴파일 된 실행파일을 준비하여 명령어 형식에 맞게 실행 시 r000hs 디렉터리가 생성되는 것을 확인할 수 있습니다. 디렉터리가 생성된 것을 확인 후 리포트 생성을 위한 명령을 실행하면 아래와 같은 결과를 출력됩니다.
 
 ```shell-session
 $ amplxe-cl -report hotspots /home01/$USER/debugger/test/r000hs
@@ -576,20 +586,20 @@ amplxe: Executing actions 100 % done
 ```
 
 * GUI 사용 결과 확인 방법
-  * Intel vtune Amplifier는 GUI 모드 역시 지원한다. 여기서는 GUI를 이용한 결과 확인 방법만 설명한다.
+  * Intel vtune Amplifier는 GUI 모드 역시 지원합니다. 여기서는 GUI를 이용한 결과 확인 방법만 설명합니다.
   * 사용자의 데스크탑에서 xming 실행
 
 `$ amplxe-gui`
 
-* 아래의 화면에서 New Analysis 버튼을 클릭한다.
+* 아래의 화면에서 New Analysis 버튼을 클릭합니다.
 
 ![](../.gitbook/assets/GTm1mNMQZZf8bty.png)
 
-* 아래와 같은 화면이 나타나면 cpu수와 체크 확인 후 Start 버튼을 클릭하면 분석이 시작된다.
+* 아래와 같은 화면이 나타나면 cpu수와 체크 확인 후 Start 버튼을 클릭하면 분석이 시작됩니다.
 
 ![](../.gitbook/assets/GZ4wIMQohgL61Xb.png)
 
-* 완료되면 다음과 같이 분석 결과가 여러 개의 탭으로 요약되어 나타난다.
+* 완료되면 다음과 같이 분석 결과가 여러 개의 탭으로 요약되어 나타납니다.
 
 ![](<../.gitbook/assets/완료되면 다음과 같이 분석 결과가.png>)
 
@@ -597,7 +607,7 @@ amplxe: Executing actions 100 % done
 
 ### 3. 프로파일러 Cary-Pat 사용예제
 
-* 본 시스템에서 프로파일러인 CaryPat을 사용하기 위하여 아래와 같이 아키텍처 등 환경을 설정한 후 예제를 진행하였다.
+* 본 시스템에서 프로파일러인 CaryPat을 사용하기 위하여 아래와 같이 아키텍처 등 환경을 설정한 후 예제를 진행하였습니다.
 
 ```shell-session
 $ module load craype-mic-knl or craype-x86-skylake
@@ -605,7 +615,7 @@ $ module load perftools-base/6.5.2 perftools/6.5.2
 $ module load PrgEnv-cray/1.0.2 cce/8.6.3
 ```
 
-* 먼저 예제에 사용될 test.c 파일을 컴파일 한다.
+* 먼저 예제에 사용될 test.c 파일을 컴파일 합니다.
 
 ```shell-session
 $ cc test.c
@@ -618,47 +628,47 @@ $ cc test.c
 $ pat_build -0 apa a.out
 ```
 
-* 위의 실행 결과로 a.out+pat 라는 파일이 생성된다.
-* 생성된 실행파일은 MPI로 작성된 파일이므로 mpirun으로 실행한다.
+* 위의 실행 결과로 a.out+pat 라는 파일이 생성됩니다.
+* 생성된 실행파일은 MPI로 작성된 파일이므로 mpirun으로 실행합니다.
 
 ```shell-session
 $ mpirun -np 4 ./a.out+pat
 ```
 
-* 실행을 완료하면 a.out+pat+378250-3s 디렉터리가 생성되고 디렉터리 안에 xf-files/002812.xf 파일이 생긴다.
+* 실행을 완료하면 a.out+pat+378250-3s 디렉터리가 생성되고 디렉터리 안에 xf-files/002812.xf 파일이 생깁다.
 
 ```shell-session
 $ pat_report a.out+pat+378250-3s
 ```
 
-* 위와 같이 pat\_report를 실행하면 a.out+pat+378250-3s 디렉터리 안에 .ap2 파일과 .apa 파일이 생성된다.
+* 위와 같이 pat\_report를 실행하면 a.out+pat+378250-3s 디렉터리 안에 .ap2 파일과 .apa 파일이 생성됩니다.
 
 ```shell-session
 $ pat_build -0 a.out+pat+378250-3s/build-options.apa
 ```
 
-* .apa 파일을 이용하여 다시 실행파일을 생성하면 a.out+apa 이름의 파일이 생성된다.
+* .apa 파일을 이용하여 다시 실행파일을 생성하면 a.out+apa 이름의 파일이 생성됩니다.
 * 이렇게 생성된 a.out+apa 파일을 실행하면
 
 ```shell-session
 $ mpirun -np 4 ./a.out+apa
 ```
 
-* a.out+pat+378250-3t에 새로운 xf 파일이 생성된다.
-* pat\_report를 다시 사용하여 새로운 데이터를 처리한다.
+* a.out+pat+378250-3t에 새로운 xf 파일이 생성됩니다.
+* pat\_report를 다시 사용하여 새로운 데이터를 처리합니다.
 
 ```shell-session
 $ pat_report a.out+apa+378250-3t
 ```
 
-* 위와 같이 실행하여 ap2 파일과 tracing 리포트를 생성한다.
-* 위와 같이 수집된 데이터를 시각화 하는 방법으로 app2를 제공한다.
+* 위와 같이 실행하여 ap2 파일과 tracing 리포트를 생성합니다.
+* 위와 같이 수집된 데이터를 시각화 하는 방법으로 app2를 제공합니다.
 
 ```shell-session
 $ app2 a.out+apa+378250-3t
 ```
 
-* 아래와 같이 시각화가 가능하다.
+* 아래와 같이 시각화가 가능합니다.
 
 ![](../.gitbook/assets/YPY09PIhdCcn1kZ.png)
 
@@ -669,7 +679,7 @@ $ app2 a.out+apa+378250-3t
 ![](../.gitbook/assets/09wS30q3jMt4TaN.png)
 
 {% hint style="info" %}
-2023년 6월 30일에 마지막으로 업데이트되었습니다.
+2023년 6월 30일에 마지막으로 업데이트  되었습니다.
 {% endhint %}
 
 [^1]: 
