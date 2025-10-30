@@ -26,7 +26,7 @@
 * 슈퍼컴퓨터 로그인 시 “Any OTP” 앱의 OTP 보안숫자를 반드시 입력해야 합니다.
   * 스마트폰을 사용하고 있지 않은 사용자의 경우, 계정담당자(account@ksc.re.kr)에게 문의
   * 자세한 OTP 설치 및 이용방법은 KISTI 홈페이지 > 기술지원 > 지침서에서 “OTP 사용자 매뉴얼” 참조
-  * LG 유플러스의 경우에는 문자가 스팸처리되므로 이메일로 알려드립니다.
+  * LG 유플러스의 경우에는 문자가 스팸 처리되므로 이메일로 알려드립니다.
 
 
 
@@ -42,7 +42,7 @@
 ### 1. 유닉스 또는 리눅스 환경
 
 ```shell-session
-$ ssh -l <사용자ID> nurion.ksc.re.kr [-p 22]
+$ ssh -l <사용자ID> nurion.ksc.re.kr [-P 22]
 ```
 
 * 예) 사용자ID가 x123abc일 경우
@@ -50,17 +50,17 @@ $ ssh -l <사용자ID> nurion.ksc.re.kr [-p 22]
 ```shell-session
 $ ssh -l x123abc nurion.ksc.re.kr
 혹은
-$ ssh -l x123abc nurion.ksc.re.kr -p 22
+$ ssh -l x123abc nurion.ksc.re.kr -P 22
 ```
 
 ### 2. 윈도우 환경
 
 * X환경 실행을 위해 Xming 실행
-  * 프로그램은 인터넷을 통해 무료로 다운로드 후 설치
+  * 프로그램은 인터넷을 통해 무료로 다운로드 후 설치하실 수 있습니다.
 
 ![](<../.gitbook/assets/프로그램은 인터넷을 통해 무료로 다운로드 후 설치.png>)
 
-* putty나 SSH Secure Shell Client 등의 ssh 접속 프로그램을 이용
+* putty나 SSH Secure Shell Client 등의 ssh 접속 프로그램을 이용합니다.
   * Host Name : nurion.ksc.re.kr, Port : 22, Connection type : SSH
   * 프로그램은 인터넷을 통해 무료로 다운로드 가능
 
@@ -71,7 +71,7 @@ $ ssh -l x123abc nurion.ksc.re.kr -p 22
 
 ![](<../.gitbook/assets/x display location.png>)
 
-※ 만약, DNS 캐싱 문제로 접속이 안 될 경우에는 캐시를 정리 (명령 프롬프트에서 ipconfig/flushdns 명령어 수행)하고 재접속
+※ 만약, DNS 캐싱 문제로 접속이 안 될 경우에는 캐시를 정리 (명령 프롬프트에서 ipconfig/flushdns 명령어 수행)하고 재접속 진행합니다.
 
 ```
 C: ipconfig /flushdns
@@ -84,7 +84,7 @@ C: ipconfig /flushdns
 ```shell-session
 $ ftp nurion-dm.ksc.re.kr
 또는
-$ sftp [사용자ID@]nurion-dm.ksc.re.kr [-p 22]
+$ sftp [사용자ID@]nurion-dm.ksc.re.kr [-P 22]
 ```
 
 * 윈도우 환경에서는 WinSCP와 같이 무료로 배포되고 있는 FTP/SFTP 클라이언트 프로그램을 이용하여 접속합니다.
@@ -99,7 +99,7 @@ $ sftp [사용자ID@]nurion-dm.ksc.re.kr [-p 22]
 ![](../.gitbook/assets/nurion-02-02-table01.png)
 
 * wget, git을 이용한 다운로드 및 대용량 데이터의 전송은 CPU Limit이 없는 Datamover 노드를 사용할 것을 권장합니다. (로그인 노드에서 수행 시에 CPU Limit에 따라 전송 중에 끊어질 수 있음)
-* 파일 압축, 해제 또한 CPU Limit에 따라 중단될 수 있으며, 로그인 노드에서 프로세스가 강제로 중단되는 경우에는 Datamover 노드에서 압축/해제 진행
+* 파일 압축, 해제 또한 CPU Limit에 따라 중단될 수 있으며, 로그인 노드에서 프로세스가 강제로 중단되는 경우에는 Datamover 노드에서 압축/해제 진행합니다.
 
 ## 다. 사용자 쉘 변경
 
@@ -133,9 +133,9 @@ $ passwd
   * 새로운 패스워드는 최근 5개의 패스워드와 유사한 것을 사용 할 수 없습니다.
   * 최대 로그인 실패 허용 횟수 : 5회
     * 5회 이상 틀릴 경우, 이 계정의 ID는 lock이 걸리므로, 계정담당자(acccount@ksc.re.kr)에게 문의해야 합니다.
-    * 같은 PC에서 접속을 시도하여 5회 이상 틀릴 경우, 해당 PC의 IP 주소는 일시적으로 block 되므로 이 경우에도 계정담당자(account@ksc.re.kr)에게 문의해야 합니다.
-  * OTP 인증오류 허용 횟수 : 5회
-    * 5회 이상 틀릴 경우, 계정담당자(account@ksc.re.kr)에게 문의해야 합니다.
+    * 같은 PC에서 접속을 시도하여 5회 이상 틀릴 경우, 해당 PC의 IP 주소는 일시적으로 block 되므로 이 경우에도 계정 담당자(account@ksc.re.kr)에게 문의해야 합니다.
+  * OTP 인증 오류 허용 횟수 : 5회
+    * 5회 이상 틀릴 경우, 계정 담당자(account@ksc.re.kr)에게 문의해야 합니다.
 
 
 

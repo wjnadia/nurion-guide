@@ -1,8 +1,8 @@
 # MVAPICH2 성능 최적화 옵션
 
-MPI 라이브러리로 MVAPICH2를 활용하는 경우 작업 스크립트 내에서 환경변수를 사용하여 프로세스 간 통신 알고리즘을 설정할 수 있다. 주요 키워드는 아래와 같으며, 사용자는 코드 내에서 많이 활용되는 collective communication에 대하여 환경변수 설정을 활용하여 실행 성능을 최적화할 수 있다.
+MPI 라이브러리로 MVAPICH2를 활용하는 경우 작업 스크립트 내에서 환경변수를 사용하여 프로세스 간 통신 알고리즘을 설정할 수 있습니다. 주요 키워드는 아래와 같으며, 사용자는 코드 내에서 많이 활용되는 collective communication에 대하여 환경변수 설정을 활용하여 실행 성능을 최적화할 수 있습니다.
 
-<mark style="color:red;">**MV2\_INTRA**</mark> 환경변수는 노드 내 MPI 프로세스 통신에서 활용되며 <mark style="color:blue;">**MV2\_INTER**</mark> 환경변수는 노드 간 MPI 프로세스 통신에서 활용된다. MPI\_Alltoall의 경우 INTRA 및 INTER 두가지 경우에 대하여 동일한 알고리즘이 적용된다. 크기가 다른 데이터 전송을 위한 루틴(예: MPI\_Alltoallv) 또는 non-blocking 기반 루틴(예: MPI\_Ibcast)에도 동일하게 적용 가능하며 설정 방법은 아래와 같다.
+<mark style="color:red;">**MV2\_INTRA**</mark> 환경변수는 노드 내 MPI 프로세스 통신에서 활용되며 <mark style="color:blue;">**MV2\_INTER**</mark> 환경변수는 노드 간 MPI 프로세스 통신에서 활용됩니다. MPI\_Alltoall의 경우 INTRA 및 INTER 두가지 경우에 대하여 동일한 알고리즘이 적용됩니다. 크기가 다른 데이터 전송을 위한 루틴(예: MPI\_Alltoallv) 또는 non-blocking 기반 루틴(예: MPI\_Ibcast)에도 동일하게 적용 가능하며 설정 방법은 아래와 같습니다.
 
 
 
@@ -23,5 +23,5 @@ MPI 라이브러리로 MVAPICH2를 활용하는 경우 작업 스크립트 내�
 ※ 각 환경변수에 대한 자세한 설명은 http://mvapich.cse.ohio-state.edu/userguide/ 참조
 
 {% hint style="info" %}
-2022년 9월 22일에 마지막으로 업데이트되었습니다.
+2022년 9월 22일에 마지막으로 업데이트 되었습니다.
 {% endhint %}

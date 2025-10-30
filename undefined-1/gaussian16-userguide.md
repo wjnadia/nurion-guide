@@ -77,7 +77,7 @@ exit 0
 
 * <mark style="color:red;">**2019년 3월 PM 이후(3월14일)부터 "#PBS -A gaussian" 옵션이 없는 경우 작업제출이 되지 않습니다.**</mark>
 * GAUSS\_PDEF 변수는 %NProcShared 옵션과 동일하며, 입력파일에 %NProcShared 값이 있을 경우 해당 값이 적용 됩니다.
-  * 이 때 GAUSS\_PDEF 또는 %NProcShared 옵션의 값은 누리온 KNL 계산노드는 68개 코어, SKL 계산노드는 40개 코어가 장착되어져 있기 때문에 계산노드에 맞게 기입하는것이 안정적인 계산 성능이 발휘 됩니다.
+  * 이 때 GAUSS\_PDEF 또는 %NProcShared 옵션의 값은 누리온 KNL 계산노드는 68개 코어, SKL 계산노드는 40개 코어가 장착되어져 있기 때문에 계산노드에 맞게 기입하여야 안정적인 계산 성능이 발휘 됩니다.
 * **가우시안16 Rev. A03 버전에서 지원하는 최대 threads 수는 64개 입니다. KNL 계산노드를 이용하는 경우 64개 까지만 사용 바랍니다.**
 
 ***
@@ -87,12 +87,12 @@ exit 0
 * 큐 이름은 누리온 사용자 지침서를 참조하여 설정하며, 일반적으로 norm\_cache로 설정해야 합니다.
 * <mark style="color:red;">**가우시안 입력 파일을 PC에서 작성 후 FTP로 전송한다면, 반드시 ascii mode로 전송해야만 합니다.**</mark>
 * 기타 PBS에 관련된 명령어 및 사용법은 누리온 사용자 지침서를 참조하시면 됩니다.
-* Gaussian Multi-Node 사용을 위해서는 Gaussian16 LINDA 버전을 사용하세요.
+* Gaussian Multi-Node 사용을 위해서는 Gaussian16 LINDA 버전을 사용하시기 바랍니다.
 
 ### 3. GaussView 사용법
 
-* GaussView는  GUI 기반 프로그램이기  때문에,  MyKSC(웹 서비스 포털)의 VNC(원격 데스크톱)에서  실행할 수 있음 ([**MyKSC VNC 사용법 참조**](https://docs-ksc.gitbook.io/myksc/app/vnc))&#x20;
-* MyKSC VNC에서 GaussView는 할당된 계산 자원의 한계로 입력  데이터 생성 및 결과 분석 용도로  사용할 것을 권장하며,  본격적인 계산 작업은 배치 작업 스케줄러를 통해 실행해야 함
+* GaussView는  GUI 기반 프로그램이기  때문에,  MyKSC(웹 서비스 포털)의 VNC(원격 데스크톱)에서  실행할 수 있습니다. ([**MyKSC VNC 사용법 참조**](https://docs-ksc.gitbook.io/myksc/app/vnc))&#x20;
+* MyKSC VNC에서 GaussView는 할당된 계산 자원의 한계로 입력  데이터 생성 및 결과 분석 용도로  사용할 것을 권장하며,  본격적인 계산 작업은 배치 작업 스케줄러를 통해 실행해야 합니다.
 
 <figure><img src="../.gitbook/assets/gassview-1.png" alt=""><figcaption><p>MyKSC VNC에서 GaussView 실행화면</p></figcaption></figure>
 

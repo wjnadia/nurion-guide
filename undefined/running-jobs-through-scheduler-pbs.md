@@ -1,6 +1,6 @@
 # 스케줄러(PBS)를 통한 작업 실행
 
-5호기 누리온 시스템의 작업 스케줄러는 Portable Batch System (이하 PBS)을 사용합니다. 이 장에서는 스케줄러를 통해 작업 제출하는 방법 및 관련 명령어들을 소개합니다. 사용자가 작업 제출 시 사용할 수 있는 큐는 정해져 있으며, 큐 별로 사용자별 최대 제출할수 있는 작업의 수는 제한이 있고, 이 값은 시스템의 부하 정도에 따라 변동될 수 있습니다.
+5호기 누리온 시스템의 작업 스케줄러는 Portable Batch System (이하 PBS)을 사용합니다. 이 장에서는 스케줄러를 통해 작업 제출하는 방법 및 관련 명령어들을 소개 드립니다. 사용자가 작업 제출 시 사용할 수 있는 큐는 정해져 있으며, 큐 별로 사용자별 최대 제출할수 있는 작업의 수는 제한이 있고, 이 값은 시스템의 부하 정도에 따라 변동될 수 있습니다.
 
 누리온 시스템은 **배타적 노드 할당 정책**을 기본적으로 적용하여, 한 노드에 한 사용자의 작업만이 실행될 수 있도록 보장합니다. 이는 공유 노드 정책을 적용할 경우 종종 발생할 수 있는 사용자 어플리케이션의 심각한 성능 저하를 예방하기 위함입니다. 그러나 상용 SW를 사용할 수 있는 큐의 경우는 노드의 규모가 크지 않아서 효율적인 자원 활용을 위해 공유 노드 정책을 적용합니다.
 
@@ -16,11 +16,11 @@
 * 작업 큐
   * 일반사용자가 사용할 수 있는 큐와 사용자별 제출 가능 작업 개수는 다음 표와 같습니다. (2021년 4월 기준)
 
-**※ 노드 구성은 시스템 부하에 따라 시스템 운영 중에 조정될 수 있습니다.** (showq 명령어와 motd를 통해 노드 구성과 최대 작업가능개수를 수시로 확인할 수 있음)
+**※ 노드 구성은 시스템 부하에 따라 시스템 운영 중에 조정될 수 있습니다.** (showq 명령어와 motd를 통해 노드 구성과 최대 작업 가능 개수를 수시로 확인할 수 있습니다.)
 
 <figure><img src="../.gitbook/assets/nurion_motd.png" alt=""><figcaption></figcaption></figure>
 
-**※ 노드 구성은 시스템 부하에 따라 시스템 운영 중에 조정될 수 있음.** (showq 명령어와 motd를 통해 노드 구성과 최대 작업가능개수를 수시로 확인할 수 있음)
+**※ 노드 구성은 시스템 부하에 따라 시스템 운영 중에 조정될 수 있습니다.** (showq 명령어와 motd를 통해 노드 구성과 최대 작업 가능 개수를 수시로 확인할 수 있습니다.)
 
 
 
@@ -42,7 +42,7 @@
 * exclusive, normal, long, debug 큐는 Cache 모드(MCDRAM을 L3캐시로 사용), flat큐는 Flat 모드(MCDRAM을 DDR4와 같이 RAM으로 사용)로 설정되어 있습니다.
 * 시스템 보호를 위해 Cache 모드는 최대 가용 메모리 82GB, Flat 모드는 102GB 제한
 
-### 5. Hyperthread off 설정으로 KNL 사용시 노드 당 최대 68 스레드, SKL 사용시 노드 당 최대 40 스레드 사용 가능
+### 5. Hyperthread off 설정으로 KNL 사용시 노드 당 최대 68 스레드, SKL 사용시 노드 당 최대 40 스레드 사용 가능합니다.
 
 
 
@@ -54,8 +54,6 @@
   * 작업 스크립트 작성 시 아래 필수 키워드, 아래 <mark style="color:red;">작업 스크립트 예시</mark>와 별첨1 <mark style="color:red;">작업 스크립트 주요 키워드</mark>를 참고하여 작성 후 제출합니다. 또한. 작업 스크립트 예시 파일은 <mark style="color:red;">/apps/shell/home/job\_examples</mark>에서 확인할 수 있습니다.
 * PBS 작업 스케줄러 필수 옵션
 
-
-
 | 필수 옵션   | 설명                |
 | ------- | ----------------- |
 | #PBS –V | 현재 환경변수 유지        |
@@ -63,8 +61,6 @@
 | #PBS –q | 작업을 실행할 큐         |
 | #PBS –l | 작업에 사용할 리소스 설정    |
 | #PBS –A | 사용 프로그램 정보(통계 목적) |
-
-
 
 *   자원 할당 변수 키워드
 
@@ -117,7 +113,7 @@
 
 PBS에서 배치 작업을 수행하기 위해서는 위에서 설명된 PBS 키워드들을 사용하여 작업 스크립트 파일을 작성해야 합니다.
 
-※ /apps/shell/home/job\_examples 에서 작업제출 스크립트 예제 파일을 복사하여 사용 가능
+※ /apps/shell/home/job\_examples 에서 작업제출 스크립트 예제 파일을 복사하여 사용 가능합니다.
 
 * Serial 프로그램 작업 스크립트 작성 예제(serial.sh)
 
@@ -142,9 +138,7 @@ module load craype-mic-knl
 
 ※ 1노드 점유 순차, 사용 예제
 
-※ 위 예제와 같이 #PBS –m, #PBS –M 옵션을 사용하여 작업을 제출하는 경우 작업이 실행될 때와 완료 시, 그리고 작업이 중단되는 경우에도 abc@def.com로 이메일 발송
-
-
+※ 위 예제와 같이 #PBS –m, #PBS –M 옵션을 사용하여 작업을 제출하는 경우 작업이 실행될 때와 완료 시, 그리고 작업이 중단되는 경우에도 abc@def.com로 이메일 발송됩니다.
 
 * OpenMP 프로그램 작업 스크립트 작성 예제(openmp.sh)
 
@@ -166,8 +160,6 @@ module purge module load craype-mic-knl
 
 ※ 1노드 점유, 노드 당 64 스레드(총 64 OpenMP 스레드) 사용 예제
 
-
-
 * MPI (IntelMPI)프로그램 작업 스크립트 작성 예제(mpi.sh)
 
 ```bash
@@ -187,8 +179,6 @@ mpirun ./test_mpi.exe
 ```
 
 ※ 4노드 점유, 노드 당 64 프로세스(총 256 MPI 프로세스) 사용 예제
-
-
 
 * MPI (OpenMPI)프로그램 작업 스크립트 작성 예제(mpi.sh)
 
@@ -236,9 +226,7 @@ mpirun_rsh -np ${TOTAL_CPUS} -hostfile $PBS_NODEFILE ./test_mpi.exe
 
 ※ 4노드 점유, 노드 당 64 프로세스(총 256 MPI 프로세스) 사용 예제
 
-<mark style="color:red;">※ mpirun 으로도 적은 규모의 노드에서는 실행이 가능하나, 많은 노드를 사용하는 작업의 경우</mark>\ <mark style="color:red;">작업 전개가 정상적으로 진행되지 않을 수 있으니 위 예시와 같이 mpirun\_rsh 으로 실행 권장</mark>
-
-
+<mark style="color:red;">※ mpirun 으로도 적은 규모의 노드에서는 실행이 가능하나, 많은 노드를 사용하는 작업의 경우</mark>\ <mark style="color:red;">작업 전개가 정상적으로 진행되지 않을 수 있으니 위 예시와 같이 mpirun\_rsh 으로 실행 권장합니다.</mark>
 
 * Hybrid(IntelMPI + OpenMP) 프로그램 작업 스크립트 작성 예제(hybrid\_intel.sh)
 
@@ -261,8 +249,6 @@ mpirun ./test_mpi.exe
 
 ※ 4노드 점유, 노드 당 2 프로세스, 프로세스 당 32 스레드(총 8 MPI 프로세스, 256 OpenMP 스레드) 사용 예제
 
-
-
 * Hybrid(openMPI + OpenMP) 프로그램 작업 스크립트 작성 예제(hybrid\_openmpi.sh)
 
 ```bash
@@ -283,8 +269,6 @@ mpirun --map-by NUMA:PE=34 ./test_mpi.exe
 ```
 
 ※ 4노드 점유, 노드 당 2 프로세스, 프로세스 당 32 스레드(총 8 MPI 프로세스, 256 OpenMP 스레드) 사용 예제
-
-
 
 * Hybrid(Mvapich2 + OpenMP) 프로그램 작업 스크립트 작성 예제(hybrid\_mvapich2.sh)
 
@@ -309,9 +293,7 @@ mpirun_rsh -np ${TOTAL_CPUS} -hostfile $PBS_NODEFILE OMP_NUM_THREADS=$OMP_NUM_TH
 
 ※ 4노드 점유, 노드 당 2 프로세스, 프로세스 당 32 스레드(총 8 MPI 프로세스, 256 OpenMP 스레드) 사용 예제
 
-<mark style="color:red;">※ mpirun 으로도 적은 규모의 노드에서는 실행이 가능하나, 많은 노드를 사용하는 작업의 경우</mark>\ <mark style="color:red;">작업 전개가 정상적으로 진행되지 않을 수 있으니 위 예시와 같이 mpirun\_rsh 으로 실행 권장</mark>
-
-
+<mark style="color:red;">※ mpirun 으로도 적은 규모의 노드에서는 실행이 가능하나, 많은 노드를 사용하는 작업의 경우</mark>\ <mark style="color:red;">작업 전개가 정상적으로 진행되지 않을 수 있으니 위 예시와 같이 mpirun\_rsh 으로 실행 권장합니다.</mark>
 
 * 작성한 작업 스크립트 제출 예시
 
@@ -352,9 +334,9 @@ $ qsub -m -M
 
 ### 2. 인터렉티브 작업 제출
 
-인터렉티브 작업 제출의 경우 잡 스크립트 작성과는 달리 #PBS를 생략하고 –I –A 등의 옵션만 사용
+인터렉티브 작업 제출의 경우 잡 스크립트 작성과는 달리 #PBS를 생략하고 –I –A 등의 옵션만 사용합니다.
 
-<mark style="color:red;">※ 2시간 이상 미사용시 타임아웃으로 작업이 종료되고 자원이 회수됨, 인터렉티브 작업의 walltime은 최대 12시간으로 고정됨</mark>
+<mark style="color:red;">※ 2시간 이상 미사용시 타임아웃으로 작업이 종료되고 자원이 회수됨, 인터렉티브 작업의 walltime은 최대 12시간으로 고정됩니다.</mark>
 
 * 배치 스크립트 대신 "-I" 옵션 사용
 
@@ -368,7 +350,7 @@ $ qsub -I -l select=1:ncpus=68:ompthreads=1 -l walltime=12:00:00 -q normal -A {P
 $ qsub -I -X -l select=1:ncpus=68:ompthreads=1 -l walltime=12:00:00 -q normal -A {PBS 옵션 이름}
 ```
 
-※ 여기서 -l select 이하 구문의 내용은 사용자 수요에 따라 변경하여 사용하면 되나, 위 구문들(리소스 점유, 큐 이름, PBS 옵션 이름)은 반드시 작성하고 작업을 제출해야함
+※ 여기서 -l select 이하 구문의 내용은 사용자 수요에 따라 변경하여 사용하면 되나, 위 구문들(리소스 점유, 큐 이름, PBS 옵션 이름)은 반드시 작성하고 작업을 제출해야 합니다.
 
 * 인터렉티브 작업 제출 시 기존 환경변수 상속 (-V)
 

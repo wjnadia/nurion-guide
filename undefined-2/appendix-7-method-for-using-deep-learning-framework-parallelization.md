@@ -2,7 +2,7 @@
 
 ## 가. Tensorflow에서 Horovod 사용법
 
-다중노드에서 CPU를 활용할 경우 Horovod를 Tensorflow와 연동하여 병렬화가 가능하다. 아래 예시와 같이 Horovod 사용을 위한 코드를 추가해주면 Tensorflow와 연동이 가능하다. Tensorflow 및 Tensorflow에서 활용 가능한 Keras API 모두 Horovod와 연동이 가능하며 우선 Tensorflow에서 Horovod와 연동하는 방법을 소개한다.\
+다중노드에서 CPU를 활용할 경우 Horovod를 Tensorflow와 연동하여 병렬화가 가능합니다. 아래 예시와 같이 Horovod 사용을 위한 코드를 추가해주면 Tensorflow와 연동이 가능합니다. Tensorflow 및 Tensorflow에서 활용 가능한 Keras API 모두 Horovod와 연동이 가능하며 우선 Tensorflow에서 Horovod와 연동하는 방법을 소개합니다.\
 (예시: MNIST Dataset 및 LeNet-5 CNN 구조)
 
 ※ Tensorflow에서 Horovod 활용을 위한 자세한 사용법은 Horovod 공식 가이드 참조\
@@ -19,7 +19,7 @@ hvd.init()
 
 ※ horovod.tensorflow: Horovod를 Tensorflow와 연동하기 위한 모듈
 
-※ Horovod를 사용하기 위하여 초기화한다.
+※ Horovod를 사용하기 위하여 초기화 합니다.
 
 
 
@@ -30,9 +30,9 @@ hvd.init()
 keras.datasets.mnist.load_data('MNIST-data-%d' % hvd.rank())
 ```
 
-※ 각 작업별로 접근할 dataset을 설정하기 위하여 Horovod rank에 따라 설정 및 생성한다.
+※ 각 작업별로 접근할 dataset을 설정하기 위하여 Horovod rank에 따라 설정 및 생성합니다.
 
-***
+
 
 ### 3. 메인 함수에서 optimizer에 Horovod 관련 설정 및 broadcast, 학습 진행 수 설정
 
@@ -45,11 +45,11 @@ hooks = [hvd.BroadcastGlobalVariablesHook(0),
                   tf.train.StopAtStepHook(last_step=20000 // hvd.size()), ... ]
 ```
 
-※ Optimizer에 Horovod 관련 설정을 적용하고 각 작업에 broadcast를 활용하여 전달함
+※ Optimizer에 Horovod 관련 설정을 적용하고 각 작업에 broadcast를 활용하여 전달합니다.
 
-※ 각 작업들의 학습과정 step을 Horovod 작업 수에 따라 설정함
+※ 각 작업들의 학습과정 step을 Horovod 작업 수에 따라 설정합니다.
 
-***
+
 
 ### 4. Inter operation 및 Intra operation의 병렬처리 설정
 
@@ -59,9 +59,9 @@ config.intra_op_parallelism_threads = int(os.environ[‘OMP_NUM_THREADS’])
 config.inter_op_parallelism_threads = 2
 ```
 
-※ config.intra\_op\_parallelism\_threads: 연산 작업에서 사용할 thread 개수를 설정하는데 사용되며 job script에서 설정한 OMP\_NUM\_THREADS를 불러와서 적용함 (본 예시의 경우 OMP\_NUM\_THREADS를 32로 설정함)
+※ config.intra\_op\_parallelism\_threads: 연산 작업에서 사용할 thread 개수를 설정하는데 사용되며 job script에서 설정한 OMP\_NUM\_THREADS를 불러와서 적용합니다. (본 예시의 경우 OMP\_NUM\_THREADS를 32로 설정합니다.)
 
-※ config.intra\_op\_parallelism\_threads: TensorFlow의 작업을 동시에 실행하는 thread 개수이며 예시와 같이 2로 설정할 경우 두 개의 작업이 병렬적으로 실행됨
+※ config.intra\_op\_parallelism\_threads: TensorFlow의 작업을 동시에 실행하는 thread 개수이며 예시와 같이 2로 설정할 경우 두 개의 작업이 병렬적으로 실행됩니다.
 
 ### 5. Rank 0 작업에 Checkpoint 설정
 
@@ -73,20 +73,20 @@ hooks=hooks,
 config=config) as mon_sess:
 ```
 
-※ Checkpoint 저장 및 불러오는 작업은 하나의 프로세스에서 수행되어야 하므로 rank 0번에 설정함
+※ Checkpoint 저장 및 불러오는 작업은 하나의 프로세스에서 수행되어야 하므로 rank 0번에 설정합니다.
 
 
 
 ## 나. Intel Caffe에서 다중노드 사용법
 
-Caffe의 다중노드 병렬화는 Horovod에서 공식적으로 지원하지 않으며 Intel에서 KNL에 최적화하여 개발한 Intel Caffe를 활용하여 병렬처리가 가능하다. Intel Caffe의 경우 병렬처리를 위한 작업들이 모두 코드 개발과정에서 적용되어 기존 Caffe에서 개발된 deploy.prototxt, solver.prototxt, train\_val.prototxt들을 그대로 사용할 수 있다.
+Caffe의 다중노드 병렬화는 Horovod에서 공식적으로 지원하지 않으며 Intel에서 KNL에 최적화하여 개발한 Intel Caffe를 활용하여 병렬처리가 가능합니다. Intel Caffe의 경우 병렬처리를 위한 작업들이 모두 코드 개발과정에서 적용되어 기존 Caffe에서 개발된 deploy.prototxt, solver.prototxt, train\_val.prototxt들을 그대로 사용할 수 있습니다.
 
 ※ Intel Caffe 활용을 위한 자세한 사용법은 Intel Caffe 공식 가이드 참조\
 ([https://github.com/intel/caffe/wiki/Multinode-guide](https://github.com/intel/caffe/wiki/Multinode-guide))
 
-딥러닝 개발자에 의해 수정된 Caffe의 코드에 대하여 병렬처리를 수행할 경우 Intel Caffe 소스코드에 해당 부분을 업데이트하여 컴파일 후 실행하여야 한다.
+딥러닝 개발자에 의해 수정된 Caffe의 코드에 대하여 병렬처리를 수행할 경우 Intel Caffe 소스코드에 해당 부분을 업데이트하여 컴파일 후 실행하여야 합니다.
 
-***
+
 
 * Intel Caffe 병렬처리 수행 방법 (작업스크립트 예제)
 
@@ -125,10 +125,10 @@ exit 0
 
 ※ Network 옵션: Intel Onmi-Path Architecture (OPA)로 설정
 
-※ PPN: Process per node의 약자로 노드당 작업수를 뜻함 (기본값: 1)
+※ PPN: Process per node의 약자로 노드당 작업 수를 뜻합니다. (기본값: 1)
 
-※ Script를 이용하지 않고도 MPI 실행을 통해 기존 Caffe 수행 방법과 동일하게 수행 가능
+※ Script를 이용하지 않고도 MPI 실행을 통해 기존 Caffe 수행 방법과 동일하게 수행 가능합니다.
 
 {% hint style="info" %}
-2022년 9월 22일에 마지막으로 업데이트되었습니다.
+2022년 9월 22일에 마지막으로 업데이트 되었습니다.
 {% endhint %}

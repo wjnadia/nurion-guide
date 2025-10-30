@@ -3,7 +3,7 @@
 ## 가. 프로그래밍 도구 설치 현황
 
 * 컴파일러 및 라이브러리 모듈
-  * &#x20;<mark style="color:red;">**Abaqus는 2023년 8월 9일로 서비스 재개되었습니다.**</mark>
+  * &#x20;<mark style="color:red;">**Abaqus는 2023년 8월 9일로 서비스 재개 되었습니다.**</mark>
 
 |           **구분**           |                                                                                                                                             [**항목 (이름/버전)**](#user-content-fn-1)[^1]                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | :------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -27,8 +27,8 @@
 * Abaqus 사용이 가능한 사용자 그룹은 대학교, 산업체(중소기업), 출연연구소에 한정 합니다.
   * **사용 가능 사용자 그룹이 아니거나 사용 신청을 하지 않은 타 기관 사용자에 의한 Abaqus 사용은      다쏘시스템코리아에 의해 법적 제재를 당할 수 있음에 유의하시기 바랍니다.**&#x20;
 * Gaussian은 helpdesk 계정담당자(account@ksc.re.kr)를 통해 사용권한 신청 후 사용 가능합니다.
-* 공통 라이브러리(예: cairo, expat, jasper, libpng, udunits 등) 설치 현황은 \[별첨 5]을 참조
-* MATLAB은 **사용자(소속기관)가  라이선스를  보유해야 합니다**.  사용법은   [MATLAB 가이드](https://docs-ksc.gitbook.io/myksc/app/matlab) 참조
+* 공통 라이브러리(예: cairo, expat, jasper, libpng, udunits 등) 설치 현황은 \[별첨 5]을 참조 부탁드립니다.
+* MATLAB은 **사용자(소속기관)가  라이선스를  보유해야 합니다**.  사용법은   [MATLAB 가이드](https://docs-ksc.gitbook.io/myksc/app/matlab) 참조 부탁드립니다.
 
 
 
@@ -179,7 +179,7 @@ $ ifort -o test.exe -O3 -fPIC -xMIC-AVX512 test.f90
 $ ./test.exe
 </code></pre>
 
-※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능
+※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능합니다.
 
 * 권장 옵션
 
@@ -197,9 +197,9 @@ GNU 컴파일러를 사용하기 위해서 필요한 버전의 GNU 컴파일러 
 $ module load gcc/7.2.0
 ```
 
-※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인
+※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인합니다.
 
-※ 반드시 "gcc/6.1.0" 이상 버전을 사용
+
 
 * &#x20;컴파일러 종류
 
@@ -219,7 +219,7 @@ $ module load gcc/7.2.0
 | -Ofast                                     | -O3 -ffast-math 매크로                                                                               |
 | -funroll-all-loops                         | 모든 루프를 unrolling함                                                                                 |
 | -ffast-math                                | fast floating point model 사용                                                                      |
-| -mline-all-stringops                       | 더 많은 inlining 허용, memcpy, strlen, memsetdp 의존적인 코드의 성능을 향상 시킴                                     |
+| -mline-all-stringops                       | 더 많은 inlining 허용, memcpy, strlen, memsetdp 의존적인 코드의 성능을 향상                                        |
 | -fopenmp                                   | OpenMP 기반의 multi-thread 코드 사용                                                                     |
 | -g                                         | 디버깅 정보를 생성                                                                                        |
 | -pg                                        | 프로파일링 정보를 생성(gmont.out)                                                                           |
@@ -240,7 +240,7 @@ $ gfortran –o test.exe -O3 -fPIC -march=knl test.f90
 $ ./test.exe
 ```
 
-※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능
+※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능합니다.
 
 * &#x20;권장 옵션
 
@@ -258,7 +258,7 @@ PGI 컴파일러를 사용하기 위해서 필요한 버전의 PGI 컴파일러 
 $ module load pgi/18.10
 ```
 
-※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인
+※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인합니다.
 
 * &#x20;컴파일러 종류
 
@@ -271,21 +271,21 @@ $ module load pgi/18.10
 
 * &#x20;PGI 컴파일러 옵션
 
-| **컴파일러 옵션**                                             | **설명**                                                                                                                                                                                               |
-| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -O\[1\|2\|3\|4]                                         | 오브젝트 최적화. 숫자는 최적화 레벨                                                                                                                                                                                 |
-| -Mipa=fast                                              | 프로시저 간 최적화                                                                                                                                                                                           |
-| -fast                                                   | -O2 -Munroll=c:1 -Mnoframe -Mlre –Mautoinline 의 매크로                                                                                                                                                  |
-| -fastsse                                                | SSE, SSE2를 지원하는 최적화                                                                                                                                                                                  |
-| -g, -gopt                                               | 디버깅 정보를 생성                                                                                                                                                                                           |
-| -mp                                                     | OpenMP 기반의 multi-thread 코드 사용                                                                                                                                                                        |
-| -Minfo=mp, ipa                                          | OpenMP관련 정보, 프로시저 간 최적화                                                                                                                                                                              |
-| -pg                                                     | 프로파일링 정보를 생성(gmon.out)                                                                                                                                                                               |
-| <p>-Mprof=time</p><p>-Mprof=func</p><p>-Mprof=lines</p> | <p>PGPROF output file 생성</p><p>- time에 기초한 명령어 단위의 프로파일링 정보를 생성, 많이 사용됨</p><p>- function 단위의 프로파일링 정보를 생성</p><p>- line 단위의 프로파일링 정보를 생성</p><p>(-Mprof=lines의 경우 overhead의 증가로 계산시간이 매우 느려질 수 있음)</p> |
-| -mcmodel medium                                         | 2GB이상의 memory allocation이 필요한 경우 사용                                                                                                                                                                  |
-| <p>-tp=skylake</p><p>-tp=knl</p>                        | <p>Skylake 아키텍쳐 프로세서 전용 옵션</p><p>KNL 아키텍쳐 프로세서 전용 옵션</p>                                                                                                                                             |
-| -fPIC                                                   | PIC(Position Independent Code)가 생성되도록 컴파일                                                                                                                                                            |
-| -help                                                   | 옵션 목록 출력                                                                                                                                                                                             |
+| **컴파일러 옵션**                                             | **설명**                                                                                                                                                                                                  |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -O\[1\|2\|3\|4]                                         | 오브젝트 최적화. 숫자는 최적화 레벨                                                                                                                                                                                    |
+| -Mipa=fast                                              | 프로시저 간 최적화                                                                                                                                                                                              |
+| -fast                                                   | -O2 -Munroll=c:1 -Mnoframe -Mlre –Mautoinline 의 매크로                                                                                                                                                     |
+| -fastsse                                                | SSE, SSE2를 지원하는 최적화                                                                                                                                                                                     |
+| -g, -gopt                                               | 디버깅 정보를 생성                                                                                                                                                                                              |
+| -mp                                                     | OpenMP 기반의 multi-thread 코드 사용                                                                                                                                                                           |
+| -Minfo=mp, ipa                                          | OpenMP관련 정보, 프로시저 간 최적화                                                                                                                                                                                 |
+| -pg                                                     | 프로파일링 정보를 생성(gmon.out)                                                                                                                                                                                  |
+| <p>-Mprof=time</p><p>-Mprof=func</p><p>-Mprof=lines</p> | <p>PGPROF output file 생성</p><p>- time에 기초한 명령어 단위의 프로파일링 정보를 생성, 많이 사용됨</p><p>- function 단위의 프로파일링 정보를 생성</p><p>- line 단위의 프로파일링 정보를 생성</p><p>(-Mprof=lines의 경우 overhead의 증가로 계산시간이 매우 느려질 수 있습니다.)</p> |
+| -mcmodel medium                                         | 2GB이상의 memory allocation이 필요한 경우 사용                                                                                                                                                                     |
+| <p>-tp=skylake</p><p>-tp=knl</p>                        | <p>Skylake 아키텍쳐 프로세서 전용 옵션</p><p>KNL 아키텍쳐 프로세서 전용 옵션</p>                                                                                                                                                |
+| -fPIC                                                   | PIC(Position Independent Code)가 생성되도록 컴파일                                                                                                                                                               |
+| -help                                                   | 옵션 목록 출력                                                                                                                                                                                                |
 
 
 
@@ -301,7 +301,7 @@ $ pgfortran –o test.exe -fast –tp=knl test.f90
 $ ./test.exe
 ```
 
-※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능
+※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능합니다.
 
 * 권장 옵션
 
@@ -319,7 +319,7 @@ Cray 컴파일러를 사용하기 위해서 필요한 버전의 Cray 컴파일�
 $ module load cce/8.6.3
 ```
 
-※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인
+※ 프로그래밍 도구 설치 현황 표를 참고하여 사용가능 버전 확인합니다.
 
 * &#x20;컴파일러 종류
 
@@ -358,7 +358,7 @@ $ ftn –o test.exe –hcpu=mic-knl test.f90
 $ ./test.exe
 ```
 
-※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능
+※ /apps/shell/home/job\_examples 에서 작업제출 test 예제파일을 복사하여 사용 가능합니다.
 
 * &#x20;권장 옵션
 
@@ -368,9 +368,9 @@ $ ./test.exe
 | KNL       | -hcpu=mic-knl |
 | SKL & KNL | 기본값           |
 
-※ 테스트를 위한 test.c 및 test.f90등은 **/apps/shell/home/job\_examples** 에서 확인 가능 (사용자 디렉토리로 복사하여 테스트)
+※ 테스트를 위한 test.c 및 test.f90등은 **/apps/shell/home/job\_examples** 에서 확인 가능 (사용자 디렉토리로 복사하여 테스트 진행합니다.)
 
-※ KNL 최적화 옵션을 사용할 프로그램은 KNL debug 노드로 인터렉티브 작업 제출을 통해 접속한 후 컴파일하는 것을 권장(“스케줄러를 통한 작업실행 → 나. 작업제출 모니터링 → 2) 인터렉티브 작업제출” 참고)
+※ KNL 최적화 옵션을 사용할 프로그램은 KNL debug 노드로 인터렉티브 작업 제출을 통해 접속한 후 컴파일하는 것을 권장합니다. (“스케줄러를 통한 작업실행 → 나. 작업제출 모니터링 → 2) 인터렉티브 작업제출” 참고 부탁드립니다.)
 
 ### 3. 병렬 프로그램 컴파일
 
@@ -556,7 +556,7 @@ $ module load vtune/17.0.5
 
 * CLI 사용법
   * Intel vtune Amplifier를 CLI 모드로 실행할 때 명령어는 아래와 같은 형식입니다.
-* $ amplxe-cl 옵션 분석할 프로그램 실행
+* $ amplxe-cl 옵션 분석할 프로그램 실행합니다.
 
 ```shell-session
 $ amplxe-cl -collect hotspots /home01/$USER/test/test.x
@@ -587,7 +587,7 @@ amplxe: Executing actions 100 % done
 
 * GUI 사용 결과 확인 방법
   * Intel vtune Amplifier는 GUI 모드 역시 지원합니다. 여기서는 GUI를 이용한 결과 확인 방법만 설명합니다.
-  * 사용자의 데스크탑에서 xming 실행
+  * 사용자의 데스크탑에서 xming 실행합니다.
 
 `$ amplxe-gui`
 
@@ -648,7 +648,7 @@ $ pat_build -0 a.out+pat+378250-3s/build-options.apa
 ```
 
 * .apa 파일을 이용하여 다시 실행파일을 생성하면 a.out+apa 이름의 파일이 생성됩니다.
-* 이렇게 생성된 a.out+apa 파일을 실행하면
+* 이렇게 생성된 a.out+apa 파일을 실행하면 됩니다.
 
 ```shell-session
 $ mpirun -np 4 ./a.out+apa
