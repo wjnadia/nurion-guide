@@ -48,7 +48,7 @@
 
 * 다음과 같이 batch mode로 job을 실행하기 위한 명령어 입력
 
-<table><thead><tr><th width="221" align="center">형식</th><th align="center">fluent [version] [-help] [option]</th></tr></thead><tbody><tr><td align="center">version</td><td align="center"><p>2d (2차원, single precision)</p><p>3d (3차원, single precision)</p><p>2ddp (2차원, double precision)</p><p>3ddp (3차원, double precision) </p></td></tr><tr><td align="center">option</td><td align="center"><p>-g  (GUI 없이 실행)</p><p>-i journal (지정한 journal file을 읽음) </p><p>-g -i journal ( background 모드로 작업을 수행) </p><p>-t<strong>x</strong>  (프로세서의 수를 x개로 지정) </p></td></tr></tbody></table>
+<table><thead><tr><th width="221" align="center">형식</th><th align="center">fluent [version] [-help] [option]</th></tr></thead><tbody><tr><td align="center">version</td><td align="center"><p>2d (2차원, single precision)</p><p>3d (3차원, single precision)</p><p>2ddp (2차원, double precision)</p><p>3ddp (3차원, double precision) </p></td></tr><tr><td align="center">option</td><td align="center"><p>-g  (GUI 없이 실행)</p><p>-i journal (지정한 journal file 읽기) </p><p>-g -i journal ( background 모드로 작업을 수행) </p><p>-t<strong>x</strong>  (프로세서의 수를 x개로 지정) </p></td></tr></tbody></table>
 
 * 로그인노드에서 Interactive 방식의 실행은 CPU time이 10분으로 제한되어 있습니다.
 * 장시간의 계산 작업은 스케줄러를 이용하여 작업을 제출해야 합니다.

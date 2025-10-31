@@ -26,7 +26,7 @@
 
 ### 1. 큐별 설명
 
-<table><thead><tr><th width="105" align="center">구분</th><th width="125" align="center">큐명</th><th align="center">특징</th></tr></thead><tbody><tr><td align="center">KNL</td><td align="center">exclusive</td><td align="center">R&#x26;D 혁신지원 프로그램 중 거대 도전연구 및 집단연구 분야 지원을 위한 전용자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">normal</td><td align="center">무상 서비스 사용자(창의연구 분야, 국가전략 분야, 혁신지원 분야)와 유상 서비스 사용자를 위한 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">long</td><td align="center">장기간 작업 수행을 할 수 있는 큐로 최대 120시간(5일) 동안 사용할 수 있는 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">flat</td><td align="center">메모리 모드가 flat으로, MCDRAM(16GB)과 DDR4를 지정하여 사용할 수 있으며 최대 102GB까지 메모리 사용이 가능한 일반자원 큐<br></td></tr><tr><td align="center">KNL</td><td align="center">debug</td><td align="center">KNL 노드의 디버깅을 위한 큐로 공유노드 정책이 적용되어 있는 일반자원 큐, 인터렉티브 작업을 통해 디버깅 가능</td></tr><tr><td align="center">SKL</td><td align="center">commercial</td><td align="center">상용 어플리케이션 수행을 위한 일반자원 큐로 공유노드 정책 적용(*Gaussian을 제외한 상용 SW는 commercial 큐 사용을 원칙으로 함)</td></tr><tr><td align="center">SKL</td><td align="center">norm_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr><tr><td align="center">SKL</td><td align="center">new_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr></tbody></table>
+<table><thead><tr><th width="105" align="center">구분</th><th width="125" align="center">큐명</th><th align="center">특징</th></tr></thead><tbody><tr><td align="center">KNL</td><td align="center">exclusive</td><td align="center">R&#x26;D 혁신지원 프로그램 중 거대 도전연구 및 집단연구 분야 지원을 위한 전용자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">normal</td><td align="center">무상 서비스 사용자(창의연구 분야, 국가전략 분야, 혁신지원 분야)와 유상 서비스 사용자를 위한 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">long</td><td align="center">장기간 작업 수행을 할 수 있는 큐로 최대 120시간(5일) 동안 사용할 수 있는 일반자원 큐</td></tr><tr><td align="center">KNL</td><td align="center">flat</td><td align="center">메모리 모드가 flat으로, MCDRAM(16GB)과 DDR4를 지정하여 사용할 수 있으며 최대 102GB까지 메모리 사용이 가능한 일반자원 큐<br></td></tr><tr><td align="center">KNL</td><td align="center">debug</td><td align="center">KNL 노드의 디버깅을 위한 큐로 공유노드 정책이 적용되어 있는 일반자원 큐, 인터렉티브 작업을 통해 디버깅 가능</td></tr><tr><td align="center">SKL</td><td align="center">commercial</td><td align="center">상용 어플리케이션 수행을 위한 일반자원 큐로 공유노드 정책 적용(*Gaussian을 제외한 상용 SW는 commercial 큐 사용 원칙)</td></tr><tr><td align="center">SKL</td><td align="center">norm_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr><tr><td align="center">SKL</td><td align="center">new_skl</td><td align="center">SKL 노드의 일반자원 큐</td></tr></tbody></table>
 
 ### 2. 작업 제출 개수 제한
 
@@ -303,7 +303,7 @@ $ qsub mpi.sh
 
 ※ mpi.sh 파일은 예시로, 작성한 작업 스크립트 파일을 이용하여 작업을 제출
 
-* PBS 배치 작업을 수행하는 경우, 작업 중 STDOUT(표준 출력)과 STDERR(표준 에러)를 시스템 디렉터리의 output에 저장하였다가 작업 완료 후 사용자 작업 제출 디렉터리로 복사한다. 기본적으로, 작업 완료 시까지 작업 관련 내용을 확인할 수 없으나 다음 키워드를 추가하면 확인 가능합니다.
+* PBS 배치 작업을 수행하는 경우, 작업 중 STDOUT(표준 출력)과 STDERR(표준 에러)를 시스템 디렉터리의 output에 저장하였다가 작업 완료 후 사용자 작업 제출 디렉터리로 복사합니다. 기본적으로, 작업 완료 시까지 작업 관련 내용을 확인할 수 없으나 다음 키워드를 추가하면 확인 가능합니다.
 * PBS에 의해 생성되는 STDOUT / STDERR를 작업 실행 중 확인할 수 있는 키워드(/home01에 파일 생성)
 
 ```bash
@@ -328,7 +328,7 @@ $ qsub -m -M
 | a  | job 중단 시(기본값) |
 | b  | job 시작 시      |
 | e  | job 실행 완료 시   |
-| n  | 이메일 알림을 받지 않음 |
+| n  | 이메일 알림을 받지 않기 |
 
 
 
@@ -336,7 +336,7 @@ $ qsub -m -M
 
 인터렉티브 작업 제출의 경우 잡 스크립트 작성과는 달리 #PBS를 생략하고 –I –A 등의 옵션만 사용합니다.
 
-<mark style="color:red;">※ 2시간 이상 미사용시 타임아웃으로 작업이 종료되고 자원이 회수됨, 인터렉티브 작업의 walltime은 최대 12시간으로 고정됩니다.</mark>
+<mark style="color:red;">※ 2시간 이상 미사용시 타임아웃으로 작업이 종료되고 자원이 회수됩니다. 인터렉티브 작업의 walltime은 최대 12시간으로 고정됩니다.</mark>
 
 * 배치 스크립트 대신 "-I" 옵션 사용
 

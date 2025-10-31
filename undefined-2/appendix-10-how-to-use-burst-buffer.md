@@ -2,7 +2,7 @@
 
 ## 가. 개념
 
-버스트버퍼 IME는 Nurion /scratch 파일시스템의 캐시 역할을 수행한다. IME를 통한 데이터 접근방법은 아래 그림과 같습니다.
+버스트버퍼 IME는 Nurion /scratch 파일시스템의 캐시 역할을 수행합니다. IME를 통한 데이터 접근방법은 아래 그림과 같습니다.
 
 ![](<../.gitbook/assets/Burst buffer IME performs the role of a cache in the Nurion.png>)
 

@@ -152,14 +152,14 @@ $ module load intel/18.0.3
 | -qopt\_report=\[0\|1\|2\|3\|4]              | 벡터 진단 정보의 양을 조절                                                                                  |
 | <p>-xCORE-AVX512<br>-xMIC-AVX512</p>        | <p>512bits 레지스터를 가진 CPU를 지원 (SKL 노드 사용 계산의 경우)<br>512bits 레지스터를 가진 MIC를 지원 (KNL노드 사용 계산의 경우)</p> |
 | -fast                                       | -O3 -ipo -no-prec-div -static, -fp-model fast=2 매크로                                              |
-| <p>-static/-static-intel/<br>-i_static</p>  | 공유 라이브러리를 링크하지 못하게 함                                                                             |
-| <p>-shared/-shared-intel/<br>-i_dynamic</p> | 공유 라이브러리를 링크를 함                                                                                  |
+| <p>-static/-static-intel/<br>-i_static</p>  | 공유 라이브러리를 링크하지 못하게 합니다.                                                                          |
+| <p>-shared/-shared-intel/<br>-i_dynamic</p> | 공유 라이브러리를 링크를 합니다.                                                                               |
 | -g -fp                                      | 디버깅 정보를 생성                                                                                       |
 | -qopenmp                                    | OpenMP 기반의 multi-thread 코드 사용                                                                    |
 | -openmp\_report=\[0\|1\|2]                  | OpenMP 병렬화 진단 레벨 조절                                                                              |
 | <p>-ax<br>-axS</p>                          | <p>특정 프로세서에 최적화된 코드를 생성<br>SIMD Extensions4(SSE4) 벡터라이징 컴파일러와 미디어 가속 명령어들을 활용하는 특화된 코드를 생성</p>   |
-| -tcheck                                     | 스레드 기반의 프로그램의 분석을 활성화 함                                                                          |
-| -pthread                                    | 멀티스레딩 지원을 받기 위해 pthread 라이브러리를 추가 함                                                              |
+| -tcheck                                     | 스레드 기반의 프로그램의 분석을 활성화 합니다.                                                                       |
+| -pthread                                    | 멀티스레딩 지원을 받기 위해 pthread 라이브러리를 추가 합니다.                                                           |
 | -msse<3,4.1>,-msse3                         | Streaming SIMD Extensions 3 지원                                                                   |
 | -fPIC,fpic                                  | PIC (Position Independent Code)가 되도록 컴파일                                                         |
 | -p                                          | 프로파일링 정보를 생성(gmon.out)                                                                           |
@@ -217,7 +217,7 @@ $ module load gcc/7.2.0
 | -O\[1\|2\|3]                               | 오브젝트 최적화. 숫자는 최적화 레벨                                                                              |
 | <p>-march=skylake-avx512<br>-march=knl</p> | <p>512bits 레지스터를 가진 CPU를 지원 (SKL 노드 사용 계산의 경우)<br>512bits 레지스터를 가진 MIC를 지원 (KNL 노드 사용 계산의 경우)</p> |
 | -Ofast                                     | -O3 -ffast-math 매크로                                                                               |
-| -funroll-all-loops                         | 모든 루프를 unrolling함                                                                                 |
+| -funroll-all-loops                         | 모든 루프를 unrolling                                                                                  |
 | -ffast-math                                | fast floating point model 사용                                                                      |
 | -mline-all-stringops                       | 더 많은 inlining 허용, memcpy, strlen, memsetdp 의존적인 코드의 성능을 향상                                        |
 | -fopenmp                                   | OpenMP 기반의 multi-thread 코드 사용                                                                     |
@@ -342,7 +342,7 @@ $ module load cce/8.6.3
 | -h omp(default)      | OpenMP 기반의 multi-thread 코드 사용                   |
 | -g \| -G0            | 디버깅 정보를 생성                                      |
 | -h pic               | 2GB이상의 static memory가 필요한 경우 사용(-dynamic 함께 사용) |
-| -dynamic             | 공유 라이브러리를 링크 함                                  |
+| -dynamic             | 공유 라이브러리를 링크                                    |
 
 
 
@@ -621,8 +621,8 @@ $ module load PrgEnv-cray/1.0.2 cce/8.6.3
 $ cc test.c
 ```
 
-* 위 실행 결과로 a.out 이라는 실행파일이 생성된다.
-* CaryPat으로 분석을 위하여 pat\_build를 이용하여 새로운 실행 파일을 생성한다.
+* 위 실행 결과로 a.out 이라는 실행파일이 생성됩니다.
+* CaryPat으로 분석을 위하여 pat\_build를 이용하여 새로운 실행 파일을 생성합니다.
 
 ```shell-session
 $ pat_build -0 apa a.out
@@ -635,7 +635,7 @@ $ pat_build -0 apa a.out
 $ mpirun -np 4 ./a.out+pat
 ```
 
-* 실행을 완료하면 a.out+pat+378250-3s 디렉터리가 생성되고 디렉터리 안에 xf-files/002812.xf 파일이 생깁다.
+* 실행을 완료하면 a.out+pat+378250-3s 디렉터리가 생성되고 디렉터리 안에 xf-files/002812.xf 파일이 생깁니다.
 
 ```shell-session
 $ pat_report a.out+pat+378250-3s
@@ -679,7 +679,7 @@ $ app2 a.out+apa+378250-3t
 ![](../.gitbook/assets/09wS30q3jMt4TaN.png)
 
 {% hint style="info" %}
-2023년 6월 30일에 마지막으로 업데이트  되었습니다.
+2023년 6월 30일에 마지막으로 업데이트 되었습니다.
 {% endhint %}
 
 [^1]: 

@@ -8,7 +8,7 @@
 
 &#x20;                 < 가상머신과 컨테이너 아키텍처 비교>                              \<Singularity 컨테이너 아키텍처>
 
-※ 가상머신은 애플리케이션이 하이퍼바이저와 게스트 OS를 거쳐 올라가는 구조이나, 컨테이너는 물리적인 하드웨어에 더 가까우며 별도의 게스트 OS가 아닌 호스트 OS를 공유하기 때문에 오버헤드가 더 작음. 최근 클라우드 서비스에서 컨테이너의 활용이 증가하고 있습니다.
+※ 가상머신은 애플리케이션이 하이퍼바이저와 게스트 OS를 거쳐 올라가는 구조이나, 컨테이너는 물리적인 하드웨어에 더 가까우며 별도의 게스트 OS가 아닌 호스트 OS를 공유하기 때문에 오버헤드가 더 작습니다. 최근 클라우드 서비스에서 컨테이너의 활용이 증가하고 있습니다.
 
 
 
@@ -34,9 +34,9 @@ export PATH=$PATH:/apps/applications/singularity/3.11.0/bin/
 $ singularity [global options...] build [local options...] ＜IMAGE PATH＞ ＜BUILD SPEC＞
 
 [주요 global options]
-    -d : 디버깅 정보를 출력함
-    -v : 추가 정보를 출력함
-    --version : 싱귤레러티 버전 정보를 출력함
+    -d : 디버깅 정보를 출력
+    -v : 추가 정보를 출력
+    --version : 싱귤레러티 버전 정보를 출력
 
 [관련 주요 local options]
     --fakeroot : roor 권한 없이 일반사용자가 가짜 root 사용자로 이미지 빌드 
