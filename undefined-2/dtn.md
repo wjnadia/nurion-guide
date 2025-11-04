@@ -6,15 +6,15 @@
 
 ### **나. 사용자 정책 및 신청 방법** <a href="#id-1" id="id-1"></a>
 
-DTN 사용은 대표홈페이지(https://www.ksc.re.kr)의 "기술지원 -> 상담" 메뉴 하단의 "상담신청"(상담 카테고리: DTN, 상담분류 DTN 계정발급)을 이용하여 신청하신 후 사용이 가능하며 /scratch 디렉토리에 직접 접근할 수 있습니다. 따라서 모든 사용 정책은 누리온의 /scratch 정책을 따라 갑니다(15일 이상 접근하지 않은 파일은 삭제).
+DTN 사용은 대표홈페이지(https://www.ksc.re.kr)의 "기술지원 -> 상담" 메뉴 하단의 "상담신청"(상담 카테고리: DTN, 상담분류 DTN 계정발급)을 이용하여 신청한 후 사용이 가능하며 /scratch 디렉터리에 직접 접근할 수 있습니다. 따라서 모든 사용 정책은 누리온의 /scratch 정책을 따라 갑니다. (15일 이상 접근하지 않은 파일은 삭제).
 
-※ 중요 데이터는 사용자 로컬 시스템에 반드시 보관해 주시는 것이 좋습니다. 일반적인 기술 지원 관련 문의는 consult@ksc.re.kr 메일이나 센터 홈페이지(https://www.ksc.re.kr) 상담게시판을 이용해주시기 바랍니다.
+※ 중요 데이터는 사용자 로컬 시스템에 반드시 보관 권장합니다. 일반적인 기술 지원 관련 문의는 consult@ksc.re.kr 메일이나 센터 홈페이지(https://www.ksc.re.kr) 상담게시판을 이용 바랍니다.
 
 ### **다. 사용 방법** <a href="#id-2" id="id-2"></a>
 
 #### **1. Globus Web App 접속** <a href="#id-1.-globus-web-app" id="id-1.-globus-web-app"></a>
 
-Globus Web App을 보다 간편하게 접속하기 위하여 먼저 Globus Connect Personal(https://www.globus.org/globus-connect-personal)을 다운로드 받아 설치하시길 바랍니다. 해당 사이트에 접속하여 운영체제에 맞는 프로그램을 다운받아 설치하시면 됩니다(설치 관련하여서는 본 지침서에서 제공하지 않습니다. 해당 사이트를 참조하셔서 설치하시기 바랍니다).
+Globus Web App을 보다 간편하게 접속하기 위하여 먼저 Globus Connect Personal(https://www.globus.org/globus-connect-personal)을 다운로드 받아 설치 바랍니다. 해당 사이트에 접속하여 운영체제에 맞는 프로그램을 다운받아 설치하면 됩니다. 설치 관련하여서는 본 지침서에서 제공하지 않습니다. 해당 사이트를 참조하셔서 설치 바랍니다.
 
 <figure><img src="../.gitbook/assets/noname01.png" alt=""><figcaption><p>그림 1 Globus Connect Personal 설치 안내 페이지</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ https://docs.globus.org/how-to/globus-connect-personal-windows/
 
 ### **2. Globus Connect Personal 실행**
 
-* 프로그램을 설치하고 Globus Connect Personal을 실행하면 윈도우즈의 작업표시줄에 그림과 같이 아이콘이 나타나게 됩니다.
+* 프로그램을 설치하고 Globus Connect Personal을 실행하면 윈도우즈의 작업 표시줄에 그림과 같이 아이콘이 나타나게 됩니다.
 
 <figure><img src="../.gitbook/assets/noname.png" alt=""><figcaption><p>그림 2 작업표시줄의 Globus Connect Personal 아이콘</p></figcaption></figure>
 
@@ -39,7 +39,7 @@ https://docs.globus.org/how-to/globus-connect-personal-windows/
 
 <figure><img src="../.gitbook/assets/그림4.png" alt=""><figcaption><p>그림 4 Web: Transfer Files 실행화면(기본보기)</p></figcaption></figure>
 
-* 브라우저에 보이는 패널의 모양은 “Web: Transfer Files” 실행화면의 우측상단에서 변경할 수 있습니다.
+* 브라우저에 보이는 패널의 모양은 “Web: Transfer Files” 실행 화면의 우측 상단에서 변경할 수 있습니다.
 
 <figure><img src="../.gitbook/assets/그림5.png" alt=""><figcaption><p>그림 5 Web: Transfer Files 실행화면 패널 보기 변경</p></figcaption></figure>
 
@@ -51,7 +51,7 @@ https://docs.globus.org/how-to/globus-connect-personal-windows/
 
 <figure><img src="../.gitbook/assets/그림6.png" alt=""><figcaption><p>그림 6  KISTI_Nurion_DTN 검색(검색키워드: nurion)</p></figcaption></figure>
 
-* 검색된 결과를 클릭하면 누리온의 /scratch 디렉토리에 접속됩니다.
+* 검색된 결과를 클릭하면 누리온의 /scratch 디렉터리에 접속 됩니다.
 
 <figure><img src="../.gitbook/assets/그림 9.png" alt=""><figcaption><p>그림 7 KISTI_Nurion_DTN 접속</p></figcaption></figure>
 
@@ -60,11 +60,11 @@ https://docs.globus.org/how-to/globus-connect-personal-windows/
 ### **4. 파일 전송**
 
 * Globus Web App에서는 개인 PC에 전송하려는 데이터를 선택한 후 상단에 있는 “Start”버튼을 클릭하면 파일이 전송됩니다. 그리고, Globus에 가입된 해외 센터의 데이터를 누리온으로 직접 전송할 수도 있습니다.&#x20;
-* 예를 들어 NERSC에서 제공하는 “Climate segmentation benchmark data”나 “CosmoFlow benchmark data”도 누리온으로 바로 전송이 가능합니다. 누리온 DTN을 검색했던 것과 같은 방법으로 검색창에 키워드(ex) climate, cosmoflow, etc.)를 입력하고 검색 한 후 전송을 원하는 데이터를 찾아서 전송(상단에 있는 “Start” 버튼 클릭 or 마우스 드래그 앤 드롭) 하면 바로 고속으로 누리온에 전송됩니다.
+* 예를 들어 NERSC에서 제공하는 “Climate segmentation benchmark data”나 “CosmoFlow benchmark data”도 누리온으로 바로 전송 가능합니다. 누리온 DTN을 검색했던 것과 같은 방법으로 검색창에 키워드(ex) climate, cosmoflow, etc.)를 입력하고 검색 한 후 전송을 원하는 데이터를 찾아서 전송(상단에 있는 “Start” 버튼 클릭 or 마우스 드래그 앤 드롭) 하면 바로 고속으로 누리온에 전송됩니다.
 
 <figure><img src="../.gitbook/assets/그림 10.png" alt=""><figcaption><p>그림 8 CosmoFlow benchmark data(from NERSC to Nurion) 전송 예제</p></figcaption></figure>
 
-* 파일전송을 시작하면 창의 오른쪽 상단에 전송요청이 성공되었다고 메시지(Transfer request submitted successfully)가 나타납니다.
+* 파일 전송을 시작하면 창의 오른쪽 상단에 전송 요청이 성공 되었다고 메시지(Transfer request submitted successfully)가 나타납니다.
 
 <figure><img src="../.gitbook/assets/그림 11.png" alt=""><figcaption><p>그림 9 데이터 전송 요청 성공 메시지 출력 화면</p></figcaption></figure>
 
@@ -76,4 +76,4 @@ https://docs.globus.org/how-to/globus-connect-personal-windows/
 
 <figure><img src="../.gitbook/assets/그림 13.png" alt=""><figcaption><p>그림 11 데이터 전송 진행 현황 상세 보기</p></figcaption></figure>
 
-* 창이 닫히더라도 데이터 전송은 정상적으로 진행이 되며 전송이 완료되면 메일로도 확인이 가능합니다.
+* 창이 닫히더라도 데이터 전송은 정상적으로 진행이 되며 전송이 완료되면 메일로도 확인 가능합니다.

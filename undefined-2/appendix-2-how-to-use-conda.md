@@ -10,7 +10,7 @@ conda 는 아나콘다에서 패키지 버전 관리를 위해 제공되는 어�
 
 Python 사용자들이 패키지 설치 시 가장 어려움을 겪는 의존성 문제를 conda 를 활용함으로써 쉽게 해결할 수 있습니다. 본 문서는 KISTI 시스템에서 Python 사용자를 위하여 conda 패키지 활용하는 방법을 소개합니다. 기본 채널로는 conda-forge 를 활용합니다.
 
-소개 페이지의 "/home01/userID" 는 테스트 계정의 홈디렉토리로 자신에 맞는 경로로 적절히 변경해서 사용해야 합니다.
+소개 페이지의 "/home01/userID" 는 테스트 계정의 홈디렉토리로 자신에 맞는 경로로 적절히 변경해서 활용 바랍니다.
 
 
 
@@ -141,7 +141,7 @@ Executing transaction: done
 
 ## 라. Conda Environment 목록 확인
 
-* "conda-env list" 또는 "conda env list" 를 이용하여 목록을 확인 할 수 있습니니다.
+* "conda-env list" 또는 "conda env list" 를 이용하여 목록을 확인 할 수 있습니다.
 
 {% code title="- 예제 -" %}
 ```shell-session

@@ -1,6 +1,6 @@
 # Singularity 컨테이너
 
-싱귤레러티(Singularity)는 도커(Docker)와 같이 OS 가상화를 구현하기 위한 HPC 환경에 적합한 컨테이너 플랫폼이다. 사용자 작업 환경에 적합한 리눅스 배포판, 컴파일러, 라이브러리 등을 포함하는 컨테이너 이미지를 생성하고 컨테이너를 구동하여 사용자 프로그램을 실행할 수 있습니다.
+싱귤레러티(Singularity)는 도커(Docker)와 같이 OS 가상화를 구현하기 위한 HPC 환경에 적합한 컨테이너 플랫폼입니다. 사용자 작업 환경에 적합한 리눅스 배포판, 컴파일러, 라이브러리 등을 포함하는 컨테이너 이미지를 생성하고 컨테이너를 구동하여 사용자 프로그램을 실행할 수 있습니다.
 
 
 
@@ -25,7 +25,7 @@ export PATH=$PATH:/apps/applications/singularity/3.11.0/bin/
 
 ### 2. 로컬 빌드
 
-* 누리온 시스템의 로그인 노드에서 컨테이너 이미지를 로컬 빌드하기 위해서는, 먼저 [**KISTI 홈페이지 > 기술지원 > 상담신청**을](https://www.ksc.re.kr/gsjw/gsjw/qna/edit) 통해 아래와 같은 내용으로 fakeroot 사용 신청을 해야합니다.
+* 누리온 시스템의 로그인 노드에서 컨테이너 이미지를 로컬 빌드하기 위해서는, 먼저 [**KISTI 홈페이지 > 기술지원 > 상담신청**을](https://www.ksc.re.kr/gsjw/gsjw/qna/edit) 통해 아래와 같은 내용으로 fakeroot 사용 신청을 해야 합니다.
   * 시스템명 : 누리온
   * 사용자 ID : a000abc
   * 요청사항 : 싱귤레러티 fakeroot 사용 설정
@@ -40,7 +40,7 @@ $ singularity [global options...] build [local options...] ＜IMAGE PATH＞ ＜B
 
 [관련 주요 local options]
     --fakeroot : roor 권한 없이 일반사용자가 가짜 root 사용자로 이미지 빌드 
-    --remote : 외부 싱귤레러티 클라우드(Sylabs Cloud)를 통한 원격 빌드(root 권한 필요 없습니다)
+    --remote : 외부 싱귤레러티 클라우드(Sylabs Cloud)를 통한 원격 빌드(root 권한이 필요 없습니다)
     --sandbox : 샌드박스 형태의 쓰기 가능한 이미지 디렉터리 빌드
 
 ＜IMAGE PATH＞
@@ -82,7 +82,7 @@ oci-archive:// OCI 아카이브 파일
    # singularity 3.11.0 버전 이상에서 지원
    # Definition 파일에서 기존 컨테이너 이미지 기반 패키지 설치에 적합하며,     
      apt-get과 같은 시스템패키지 관리자를 사용하는 경우 일부 패키지(git 등) 설치 과정에서 에러가 
-     발생할 수 있습니다
+     발생할 수 있습니다.
  $ singularity build ubuntu4.sif ubuntu.def*
  
 * ) ubuntu.def 예시
@@ -115,9 +115,9 @@ oci-archive:// OCI 아카이브 파일
  (Sylabs Cloud에서 제공하는 원격 빌드 서비스 이용하여 Definition 파일로부터ubuntu4.sif 이미지 빌드하기)
 ```
 
-※ Sylabs Cloud(https://cloud.sylabs.io)에서 제공하는 원격빌드 서비스를 이용하려면 액세스 토큰을 생성하여 뉴론 시스템에 등록해야 합니다 [**\[참조 1\]**](appendix-3-how-to-use-singularity-container.md#id-1-sylabs-cloud)
+※ Sylabs Cloud(https://cloud.sylabs.io)에서 제공하는 원격빌드 서비스를 이용하려면 액세스 토큰을 생성하여 뉴론 시스템에 등록해야 합니다. [**\[참조 1\]**](appendix-3-how-to-use-singularity-container.md#id-1-sylabs-cloud)
 
-※ 또한, Sylabs Cloud에 웹 브라우저 접속을 통해서 싱귤레러티 컨테이너 이미지의 생성∙관리가 가능합니다.  [**\[참조 2\]**](appendix-3-how-to-use-singularity-container.md#id-2-2)
+※ 또한, Sylabs Cloud에 웹 브라우저 접속을 통해서 싱귤레러티 컨테이너 이미지의 생성 및관리가 가능합니다.  [**\[참조 2\]**](appendix-3-how-to-use-singularity-container.md#id-2-2)
 
 ### 4. 컨테이너 이미지 가져오기/내보내기
 
@@ -180,7 +180,7 @@ $ singularity run pytorch1.sif python test.py
 14954055.pbs
 ```
 
-※ 자세한 스케줄러(PBS) 사용 방법은 "[**누리온 지침서-스케줄러(PBS)를 통한 작업실행**](../undefined/running-jobs-through-scheduler-pbs.md)" 참조바랍니다.
+※ 자세한 스케줄러(PBS) 사용 방법은 "[**누리온 지침서-스케줄러(PBS)를 통한 작업실행**](../undefined/running-jobs-through-scheduler-pbs.md)" 참고 바랍니다.
 
 #### **2) 작업 스크립트 파일 예시**&#x20;
 
@@ -288,7 +288,7 @@ $ export OMP_NUM_THREADS=68; singularity exec tensorflow-1.12.0-py3.simg python 
 
 ![](<../.gitbook/assets/빌드한 컨테이너 이미지 목록 보기.png>)
 
-_※ 누리온에서 singularity 명령어로 리모트 빌드한 이미지 목록도 포함됩니다._
+※ 누리온에서 singularity 명령어로 리모트 빌드한 이미지 목록도 포함됩니다.
 
 
 
