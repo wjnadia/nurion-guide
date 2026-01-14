@@ -74,6 +74,7 @@
 * 예제 파일
   * /apps/commercial/test\_samples/ANSYS/fluent\_v181.sh (단일노드에서 수행)
   * /apps/commercial/test\_samples/ANSYS/fluent\_v181\_multinode.sh (멀티 노드에서 수행)
+  * /apps/commercial/test\_samples/ANSYS/fluent\_v241\_multinode.sh (241 버전 멀티 노드 작업스크립트)
 
 ※ 아래는 누리온 시스템에서의 작업제출 예제입니다. **(단일노드에서 수행)**
 
@@ -162,5 +163,5 @@ $ qdel 0001.pbs
 ANSYS Fluent 버전별 Start Guide 문서&#x20;
 
 {% hint style="info" %}
-2023년 4월 13일에 마지막으로 업데이트 되었습니다.
+2026년 1월 14일에 마지막으로 업데이트 되었습니다.
 {% endhint %}

@@ -62,6 +62,8 @@ $ module load cfx/v181
 * 예제 파일
   * &#x20;/apps/commercial/test\_samples/ANSYS/cfx\_v181.sh (단일노드에서 수행)
   * /apps/commercial/test\_samples/ANSYS/cfx\_v181\_multinode.sh (멀티 노드에서 수행)
+  * /apps/commercial/test\_samples/ANSYS/cfx\_v232\_multinode.sh (232 버전 멀티 노드 작업 스크립트)
+  * /apps/commercial/test\_samples/ANSYS/cfx\_v241\_multinode.sh (242 버전 멀티 노드 작업 스크립트)
 
 ※ 아래 예제는 5호기 시스템에서의 CFX에 대한 예제입니다. **(단일노드에서 수행)**
 
@@ -145,5 +147,5 @@ $ qdel 0001.pbs
 ```
 
 {% hint style="info" %}
-2023년 4월 13일에 마지막으로 업데이트 되었습니다.
+2026년 1월 14일에 마지막으로 업데이트 되었습니다.
 {% endhint %}
