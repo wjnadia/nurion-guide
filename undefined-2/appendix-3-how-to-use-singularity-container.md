@@ -30,6 +30,10 @@ export PATH=$PATH:/apps/applications/singularity/3.11.0/bin/
   * 사용자 ID : a000abc
   * 요청사항 : 싱귤레러티 fakeroot 사용 설정
 
+{% hint style="warning" %}
+<mark style="color:$danger;">**2026년 1월 8일**</mark><mark style="color:$danger;">**&#x20;**</mark>_<mark style="color:$danger;">**이후**</mark>_ _<mark style="color:$success;">**신규 사용자**</mark>는 계정 등록 시 자동 처리 되므로 <mark style="color:$success;">**신청할 필요가 없습니다**</mark>._
+{% endhint %}
+
 ```
 $ singularity [global options...] build [local options...] ＜IMAGE PATH＞ ＜BUILD SPEC＞
 
