@@ -16,7 +16,7 @@
 
 * Ansys (Workbench, SpaceClaim, CFD-Post 등) v2020 R2, v2023 R2
 * Abaqus (CAE, Viewer) v2020, v2023
-* Paraview  v5.11.1, VAPOR v3.9.0
+* Paraview  v5.11.1
 * Salome-Meca v2023
 * VAPOR v3.10.1
 
