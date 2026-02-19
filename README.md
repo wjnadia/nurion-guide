@@ -90,10 +90,10 @@
 [appendix-11-how-to-use-flat-node.md](undefined-2/appendix-11-how-to-use-flat-node.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/m0dVIsir6dGbRy5WvJq6" %}
+[Broken link](/broken/pages/m0dVIsir6dGbRy5WvJq6)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/LKHFC3X9wqzblR63EsnD" %}
+[Broken link](/broken/pages/LKHFC3X9wqzblR63EsnD)
 {% endcontent-ref %}
