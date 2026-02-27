@@ -14,7 +14,7 @@
 
 현재 공학해석 전·후처리를  위해  아래와  같은 소프트웨어를  지원하고 있으며, 향후 사용자 요구에 따라 지원 애플리케이션을 확대할 예정입니다.
 
-* Ansys (Workbench, SpaceClaim, CFD-Post 등) v2020 R2, v2023 R2
+* Ansys (Workbench, SpaceClaim, CFD-Post 등) v2020 R2, v2023 R2, v2025 R2
 * Abaqus (CAE, Viewer) v2020, v2023
 * Paraview  v5.11.1
 * Salome-Meca v2023
@@ -79,7 +79,7 @@ Horizon  Client 프로그램에서 Normal Node 데스크톱 풀을 선택하여 
 
 
 * 바탕화면 혹은 시작-프로그램 목록에서 설치된 소프트웨어 목록을 확인할 수 있습니다.
-  * Ansys (Workbench, SpaceClaim, CFD-Post 등) v2020 R2, v2023 R2
+  * Ansys (Workbench, SpaceClaim, CFD-Post 등) v2020 R2, v2023 R2, v2025 R2
   * Abaqus (CAE, Viewer) v2020, v2023
   * Paraview v5.11.1
   * Salome-Meca v2023
