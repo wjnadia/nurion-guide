@@ -70,7 +70,7 @@ Horizon  Client 프로그램에서 Normal Node 데스크톱 풀을 선택하여 
 
 
 
-* 데스크톱(VM)이 할당되면 윈도우즈 10 OS에 연결 로그인 되며  약 30초 이내 소요됩니다.
+* 데스크톱(VM)이 할당되면 윈도우즈 10 OS에 연결 로그인 됩니다.
 
 <figure><img src="../.gitbook/assets/Horizon-5.JPG" alt=""><figcaption><p>웹 브라우저를 통한 사용자 데스크톱(VM) 연결 로그인 화면</p></figcaption></figure>
 
@@ -90,7 +90,9 @@ Horizon  Client 프로그램에서 Normal Node 데스크톱 풀을 선택하여 
 
 
 * 사용자 데스크톱의 로그인 과정에서 누리온 시스템의 home01과 scratch의 사용자 디렉터리가 자동으로 마운트 되며, 마운트가 되지 않거나 오류가 있을 경우 바탕화면의 'NFS' 아이콘을 실행합니다.
-* 보안을 위해 C:\ 드라이브, 제어판 등은 접근이 차단되어 있으며, 사용자가 생성 및 저장한 파일들은 VM 종료 시 모두 초기화 됩니다.  따라서, 계속 보관이 필요한 파일들은 누리온 시스템의 사용자 홈 및 스크래치 디렉터리에 저장해야 합니다.
+*   보안을 위해 C:\ 드라이브와 제어판 등 시스템 설정에 대한 접근은 제한되며, 사용자가 생성하거나 저장한 파일은 VM 종료 시 모두 초기화되는 것이 원칙입니다. 따라서 지속적인 보관이 필요한 파일은 반드시 누리온의 사용자 홈 디렉터리(X:)  또는 스크래치 디렉터리(Y:)에 저장해 주시기 바랍니다.
+
+    <mark style="background-color:yellow;">다만, 사용자의 편의를 위해</mark> <mark style="color:$danger;background-color:yellow;">**바탕 화면, 문서, 다운로드 폴더에 저장한 파일**</mark><mark style="background-color:yellow;">은</mark> <mark style="color:$danger;background-color:yellow;">**VM 종료 후에도 유지**</mark><mark style="background-color:yellow;">되도록 설정되어 있습니다.</mark> <mark style="background-color:yellow;">해당 폴더들은</mark> <mark style="color:$danger;background-color:yellow;">**사용자  당**</mark><mark style="color:$danger;background-color:yellow;">**&#x20;**</mark><mark style="color:$danger;background-color:yellow;">**최대 50GB까지 저장**</mark> <mark style="color:$danger;background-color:yellow;">**가능**</mark><mark style="background-color:yellow;">하나, 예기치 못한 데이터 손실을 방지하기 위해 중요 파일은 반드시 개별적으로 백업하시기 바랍니다.</mark>
 * 데스크톱(VM) 구동  후 idle 상태로 3시간이 경과하면 연결이 해제되고 자동 종료됩니다.
 
 <figure><img src="../.gitbook/assets/Horizon-8.JPG" alt=""><figcaption><p>사용자 데스크 톱(VM)에서 누리온 시스템 사용자 홈/스크래치 디렉터리</p></figcaption></figure>
