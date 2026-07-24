@@ -37,7 +37,7 @@ Abaqus 2024hf6 버전은 누리온 시스템 OS인 CentOS 7.9 버전을 지원�
 
 ### 3. 이미지 파일 경로
 
-* /apps/commercial/abaqus/2024/abaqus\_2024hf6.sif
+* /apps/commercial/abaqus/2024/abaqus\_2024hf12.sif
 
 ## 라. 소프트웨어 실행 방법
 
@@ -72,8 +72,8 @@ fi
 source /apps/Modules/lmod/8.7.37/init/bash
 #######################
 
-module load abaqus/2024
-abq2024hf6 job=e1 cpus=$TOTAL_CPUS int verbose=3
+module load abaqus/2024_hf12
+abq2024hf12 job=e1 cpus=$TOTAL_CPUS int verbose=3
 ```
 
 ※ abaqus 2024 이미지를 통한 실행은 단일 노드에서만 가능하며 멀티 노드에서는 지원되지 않습니다.
