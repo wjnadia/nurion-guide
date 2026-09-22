@@ -25,9 +25,12 @@
 
 * 슈퍼컴퓨팅 보안 접속을 위해 OTP 스마트폰 앱이 제공됩니다.
 * OTP 스마트폰 앱은 안드로이드 앱 스토어(Google Play)나 아이폰 앱 스토어(App Store)에서 “AnyAuth”로 검색 후 한국정보인증(구:미래기술(mirae-tech))에서 개발한 앱을 설치하여 사용할 수 있습니다.
-* 슈퍼컴퓨터 로그인 시 “AnyAuth” 앱의 OTP 보안숫자(6자리)를 반드시 입력해야 합니다.
-* 스마트폰을 사용하고 있지 않은 사용자의 경우, 계정담당자(account@ksc.re.kr)에게 문의 바랍니다.
-* 자세한 OTP 설치 및 이용방법은 사용자포털(www.ksc.re.kr) > "알림·소식" > "자료실" > "시스템지침서"에서 “\[안내] OTP 사용자 포털 서비스 개시(OTP 발급/재발급/취소)”를 참고 바랍니다.
+
+※ 슈퍼컴퓨터 로그인 시 “AnyAuth” 앱의 OTP 보안숫자(6자리)를 반드시 입력해야 합니다.
+
+※ 스마트폰을 사용하고 있지 않은 사용자의 경우, 계정담당자(account@ksc.re.kr)에게 문의 바랍니다.
+
+※ 자세한 OTP 설치 및 이용방법은 사용자포털(www.ksc.re.kr) > "알림·소식" > "자료실" > "시스템지침서"에서 “\[안내] OTP 사용자 포털 서비스 개시(OTP 발급/재발급/취소)”를 참고 바랍니다.
 
 
 
@@ -54,7 +57,7 @@ $ ssh -l x123abc nurion.ksc.re.kr
 $ ssh -l x123abc nurion.ksc.re.kr -P 22
 ```
 
-* Password(OTP)에는 OPT 6자리 숫자 토근을 Password에는 슈퍼컴퓨터 로그인 비밀번호롤 입력
+* Password(OTP)에는 OPT 6자리 숫자 토근을 Password에는 슈퍼컴퓨터 로그인 비밀번호롤 입력합니다.
 
 ```bash
 $ ssh -l x123abc nurion.ksc.re.kr
